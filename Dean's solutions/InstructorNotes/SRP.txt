@@ -1,0 +1,38 @@
+* Running the tests results in two failures.  After a little while
+  hint to the students to walk up the stack trace to see where 
+  the bug comes from.
+  
+  The failure is in this line of code in the Library.returnCopy
+  method
+        receipt.setFine(calculateFine(receipt));
+  
+  It should be:
+        receipt.setFine(calculateFine(borrowReceipt));
+
+* After students fix the bug, the root cause is that receipt 
+  is doing two jobs.  Discuss the need to separate those 
+  responsibilities.
+
+* The Receipt class needs to be split into two separate classes,
+  LoanReceipt and BorrowReceipt.
+
+* The OK, LATE, UNBORROWED_BOOK, and UNKNOWN_BOOK types don't apply
+  to both types of receipts.  They should be partitioned accordingly.
+
+* Some methods of receipt (getDueDate, etc) are only valid for certain
+  kinds of receipts.  They should be partitioned.
+
+* In the end there should probably not be a base class named Receipt.
+  The two should be separate.  
+  
+* Poll the class to see their solution.  Is a common base class
+  part of their solution?
+
+* Discuss why a Receipt base class is not desirable.  We don't want
+  to allow substitution.  IS-A is not appropriate thinking in 
+  this case.
+  
+* See the solution in DIP
+  * Library.returnCopy
+  * ...models.LoanReceipt, and ReturnReceipt
+  

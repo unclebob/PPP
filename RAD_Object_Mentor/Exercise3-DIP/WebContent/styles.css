@@ -1,0 +1,193 @@
+/* Some properties are defined in environment.rb and dynamically included here. */
+.palette {
+  padding: 2mm;
+  float: left;
+  background-color: #BDE6BD;
+  border-style: groove;
+  border-color: #CCCF79;
+  border-top-style: none;
+  font-size: small;
+  font-family: arial, san-serif;
+  margin-right: 3mm;
+  height: 5in;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: arial, san-serif;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+a {
+/*  color: #2B4B6C; */
+  color: #A64342; /* same as "object mentor" in logo */
+}
+
+a:hover {
+  background-color: #aca;
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  padding: 2mm;
+  height: .75in;
+  background-color: #BDE6BD;
+  border-color: #CCCF79;
+  border-style: groove; /*  border-top-style: none; */
+}
+
+.header h1, body h1 {
+/*  color: #3B9B3B; */
+/*  color: #5E4800; */
+/*  color: #5E482E; */
+/*  color: #735533; */
+  color: #A64342; /* same as "object mentor" in logo */
+}
+
+.footer {
+  position: fixed;
+  left: auto;
+  right: auto;
+  bottom: 0;
+  height: .25in;
+  padding: 5px;
+  text-align: center;
+  background-color: #F5F6D6;
+  border-color: #F5F6D6;
+  font-size: x-small;
+  font-family: arial, san-serif
+}
+
+.canvas {
+/*  background-color: #F5F6D6; */
+  margin-left: 1cm; /*  height: 4in; */
+}
+
+body {
+  background-color: #F5F6D6;
+}
+
+.error {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1.4cm;
+  background-color: white;
+  border-color: red;
+  border-style: solid;
+  color: red;
+  font-size: medium;
+  font-family: arial, san-serif
+}
+
+.warning {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: white;
+  border-color: yellow;
+  border-style: solid;
+  color: purple;
+  font-size: medium;
+  font-family: arial, san-serif
+}
+
+.info {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: white;
+  border-color: green;
+  border-style: solid;
+#eaebcc color : green;
+  font-size: medium;
+  font-family: arial, san-serif
+}
+
+.input {
+  background-color: #EAEDC5; /* same as even */
+  border: thin, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+  margin: 5px;
+  padding: 5px;
+}
+
+table.list {
+  background-color: #EAEDC5; /* same as even */
+  border: thin, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+  margin: 5px;
+  padding: 5px;
+}
+
+tr.head {
+/*
+  background-color: #EFD5A7;
+  background-color: #ECF0C7;
+  border-color: #EFD5A7;
+*/
+  background-color: #DEE2BE;
+  text-align: left;
+  margin: 0px;
+  padding: 5px;
+  border: thin, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+}
+
+th {
+  vertical-align: top;
+  margin: 0px;
+  padding: 5px;
+  border: thin, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+}
+tr.foot {
+  background-color: #DEE2BE;
+  text-align: right;
+  margin: 0px;
+  padding: 5px;
+  border: thin, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+}
+td.foot {
+  border: this, solid, gray;
+  border-width: thin;
+  border-style: solid;
+  border-color: gray;
+}
+tr.even {
+  background-color: #EAEDC5;
+  border-color: #EAEDC5;
+  margin: 0px;
+  padding: 5px;
+}
+
+tr.odd {
+  background-color: #EAEBCC;
+  border-color: #EAEBCC;
+  margin: 0px;
+  padding: 5px;
+}
+
+td {
+  margin: 0px;
+  padding: 5px;
+}

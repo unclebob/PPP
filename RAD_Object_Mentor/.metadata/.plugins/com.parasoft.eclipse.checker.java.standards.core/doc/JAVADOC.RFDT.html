@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<TITLE>
+Follow the required format for '@deprecated' tags
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+Follow the required format for '@deprecated' tags [JAVADOC.RFDT-3]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+
+This rule checks that all '@deprecated' tags have a value that is 
+properly formatted.  An example of a properly formatted '@deprecated'
+tag is
+
+@deprecated AsOf: 10/10/2006 Version: 6.4.1.0606_DEV Reason: Some reason 
+blah blah Substitute: Some substitute blah blah
+
+'@deprecated' tags should have, in order, sections labelled "AsOf:", 
+"Version:", "Reason:", and "Substitute:".  If any one of these labels 
+is missing from a '@deprecated' tag, if one of the labels is spelled 
+incorrectly, or if the sections are out of order, this rule will flag a 
+violation.  
+
+The rule also checks that none of the sections of the '@deprecated' 
+tag are empty and that the date in the "AsOf:" section matches the 
+correct format.  The date should match the following format: MM/DD/YYYY.
+The month should be a number between 01 and 12.  The date should start
+with a number between 0 and 3.  The year should start with either "19"
+or "20".  There are no specific requirements for the other sections, 
+but they must not be empty.  
+
+The rule will flag any '@deprecated' tag where the value of the tag does 
+not match the regular expression "AsOf: [0-1]?[0-9]/[0-3]?[0-9]/[1-2][90]
+[0-9][0-9] Version: .+ Reason: .+ Substitute: .+".  Note that it is still 
+possible for some invalid dates in the "AsOf:" section to match this 
+regular expression (such as "AsOf: 18/36/1099"), but using this regular 
+expression will detect most invalid dates.
+
+</PRE>
+<STRONG>
+BENEFITS
+</STRONG>
+<PRE>
+
+If you deprecate code, it is a good idea to document when and why 
+this was done as well as what the replacement for the deprecated
+code is.
+
+</PRE>
+<STRONG>
+EXAMPLE
+</STRONG>
+<PRE>
+
+package examples.rules.codsta;
+
+public class RFDT {
+    /** 
+     * meth.
+     * 
+     * @deprecated  //VIOLATION
+     */
+    public void meth() { 
+    }
+}
+
+</PRE>
+<STRONG>
+REPAIR
+</STRONG>
+<PRE>
+
+Make sure the '@deprecated' tag has a value which contains the 
+labels "AsOf:", "Version:", "Reason:", and "Substitute:" (matching
+spelling and capitalization exactly) and that these labels appear
+in the specified order.  Make sure that the value of the '@deprecated'
+tag matches the regular expression "AsOf: [0-1]?[0-9]/[0-3]?[0-9]/
+[1-2][90][0-9][0-9] Version: .+ Reason: .+ Substitute: .+".
+
+package examples.rules.codsta;
+
+public class RFDTFixed {
+    /** 
+     * meth.
+     * 
+     * @deprecated AsOf: 10/10/2006 Version: 6.4.1.0606_DEV Reason: Some reason 
+     * blah blah Substitute: Some substitute blah blah  //FIXED
+     */
+    public void meth(){  
+    }
+}
+
+</PRE>
+</BODY>
+</HTML>

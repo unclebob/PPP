@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<TITLE>
+Do not pass floating point values to the 'BigDecimal' constructor
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+Do not pass floating point values to the 'BigDecimal' constructor [MISC.BBDCC-3]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+
+This rule identifies code where a "double" or "float" value is passed to the constructor
+for 'java.math.BigDecimal'.  
+
+</PRE>
+<STRONG>
+BENEFITS
+</STRONG>
+<PRE>
+
+Calling the 'BigDecimal' constructor with a "double" or "float" value as an argument
+should be avoided because doubles/floats are not precisely equal to their 
+desired values.  This is because doubles/floats cannot be precisely represented as 
+a finite sequence of bits. 
+ 
+
+</PRE>
+<STRONG>
+SINCE
+</STRONG>
+<PRE>
+
+v7.0
+
+</PRE>
+<STRONG>
+EXAMPLE
+</STRONG>
+<PRE>
+
+package examples.rules.misc;
+
+import java.math.*;
+
+public class BBDCC{
+    public void method(){
+        BigDecimal a1 = new BigDecimal("58364.05"); 
+    	BigDecimal a2 = new BigDecimal("27636.75"); 
+    	BigDecimal a3 = new BigDecimal("2263.55"); 
+    	BigDecimal a4 = new BigDecimal(a1.floatValue()); //VIOLATION 
+
+    	BigDecimal aAll = new BigDecimal(a1.floatValue()+ a2.floatValue() 
+    	                                                     + a3.floatValue()+ a4.floatValue()); //VIOLATION
+    }
+}
+
+</PRE>
+<STRONG>
+REPAIR
+</STRONG>
+<PRE>
+
+Use the 'BigDecimal' constructor which takes a String as an argument instead 
+of the one which takes a double/float since this constructor will produce a precise
+value.
+
+package examples.rules.misc;
+
+import java.math.*;
+
+public class BBDCC{
+    public void method(){
+        BigDecimal a1 = new BigDecimal("58364.05"); 
+        BigDecimal a2 = new BigDecimal("27636.75"); 
+        BigDecimal a3 = new BigDecimal("2263.55"); 
+        BigDecimal a4 = new BigDecimal(Float.toString(a1.floatValue())); //REPAIR
+            
+        BigDecimal aAdd = a1.add(a2).add(a3).add(a4); //REPAIR 
+
+    }
+}
+
+</PRE>
+</BODY>
+</HTML>

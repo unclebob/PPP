@@ -1,0 +1,27 @@
+Here is a little help on how the OM web framework works.
+
+
+Click on a page, note the url, for example
+ * http://localhost:8080/Library/patrons/books/loanBook.do
+ 
+Everything goes through ControllerServlet.java
+
+doGet - gets a web page
+
+doPost - puts form data and gets a reply page
+
+controllerServelet.handle takes patrons/books/loanBook fromthe url
+and makes a java package and class name.  The class name in this example
+is com.objectmentor.library.web.controller.patrons.BooksController.
+The method loadBook() in the controller will be invoked subsequently...
+
+When loadBook() is done, the work for loadBook is done and the next 
+page has been identified.
+
+At the end of handle, the forward method is called to create the next web page.
+
+The "forward(request, response)" call request parameter identifies the 
+next page content..
+
+Controller.java sets the template.jsp as the resource_path to be used for
+all  (or almost all) library pages. 

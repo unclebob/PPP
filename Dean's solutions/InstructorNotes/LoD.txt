@@ -1,0 +1,22 @@
+Patron gateway should not be returning Lists and Maps and nextIDs.
+
+The source of the bug is that Patron.getId() is returning 
+the same ID for all patrons.
+
+To get the test to pass, setting the id's of ALL patrons wil result
+a passing test.  Not setting al patrons results in 
+NullPointerExceptions.
+
+Whose responsibility is the assignment of the ID?  Right now 
+the client is responsible by default.  The Gateway should
+take responsibility.
+
+This is a very baby-step intensive surgery - emphasize that the
+tests must be run between each step.
+
+Look for use of setId() to see all the places that call it.  Removing 
+these LoD violations results in more responsible code.
+
+Discussion:
+
+A side effect of removing LoD violations may be a lowered LOC count.

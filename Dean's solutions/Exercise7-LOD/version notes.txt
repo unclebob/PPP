@@ -1,0 +1,5 @@
+Version 248: - This document created.
+             - Book Loan Workflow is working properly.
+             - Just before refactoring all ids out of the library.
+
+Version 253: - All Gateways removed from Library.

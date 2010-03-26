@@ -1,0 +1,3 @@
+#Tue Apr 24 08:52:54 EDT 2007
+org.eclipse.jdt.junit.active_filters=org.eclipse.jdt.internal.junit.runner.*,org.eclipse.jdt.internal.junit.ui.*,junit.framework.TestCase,junit.framework.TestResult,junit.framework.TestSuite,junit.framework.Assert,java.lang.reflect.Method.invoke,junit.framework.TestResult$1
+eclipse.preferences.version=1

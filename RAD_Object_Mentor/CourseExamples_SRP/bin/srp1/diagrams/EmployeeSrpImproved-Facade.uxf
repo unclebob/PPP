@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><umlet_diagram><element><type>com.umlet.element.base.Class</type><coordinates><x>530</x><y>30</y><w>100</w><h>30</h></coordinates><panel_attributes>Bank</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>340</x><y>20</y><w>150</w><h>70</h></coordinates><panel_attributes>Employee
+--
++ calculatePay()
++ calculateTaxes()</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>40</x><y>220</y><w>160</w><h>60</h></coordinates><panel_attributes>EmployeeGateway
+--
++ writeEmpolyee()
++ loadEmployee()
+</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>260</x><y>240</y><w>100</w><h>50</h></coordinates><panel_attributes>Employee
+Report</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>510</x><y>240</y><w>100</w><h>50</h></coordinates><panel_attributes>Tax
+Report</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>490</x><y>190</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;50;20;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>410</x><y>190</y><w>40</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;50;20;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>310</x><y>190</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;50;30;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>210</x><y>130</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;20;20;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>210</x><y>30</y><w>150</w><h>40</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>130;20;20;20</additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>320</x><y>120</y><w>220</w><h>90</h></coordinates><panel_attributes>EmployeeReportHelper
+--
++ displayOnEmployeeReport()
++ displayOnpayrollReport()
++ displayOnTaxReport()</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>380</x><y>240</y><w>110</w><h>50</h></coordinates><panel_attributes>Payroll
+Report</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Class</type><coordinates><x>10</x><y>10</y><w>220</w><h>160</h></coordinates><panel_attributes>EmployeeFacade
+--
++ calculatePay()
++ calculateTaxes()
++ writeToDatabase()
++ loadFromDatabase()
++ displayOnEmployeeReport()
++ displayOnpayrollReport()
++ displayOnTaxReport()
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>470</x><y>30</y><w>80</w><h>40</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>60;20;20;20</additional_attributes></element><element><type>com.umlet.element.base.Relation</type><coordinates><x>90</x><y>150</y><w>40</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;70;20;20</additional_attributes></element></umlet_diagram>

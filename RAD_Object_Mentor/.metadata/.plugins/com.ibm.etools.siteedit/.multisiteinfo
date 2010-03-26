@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<multisite-config>
+    <project-data name="Library">
+        <data>
+            <item name="Library" stamp="19727"/>
+            <item name="Library_Test" stamp="19909"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise3-DIP">
+        <data>
+            <item name="Exercise3-DIP" stamp="17921"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise4-OCP">
+        <data>
+            <item name="Exercise4-OCP" stamp="18147"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise6-ISP">
+        <data>
+            <item name="Exercise6-ISP" stamp="18627"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise1-NamingAndLongMethods">
+        <data>
+            <item name="Exercise1-NamingAndLongMethods" stamp="17810"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise9-PackageDecoupling">
+        <data>
+            <item name="Exercise9-PackageDecoupling" stamp="19456"/>
+        </data>
+    </project-data>
+    <project-data name="Library_Test">
+        <data>
+            <item name="Library" stamp="19727"/>
+            <item name="Library_Test" stamp="19909"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise5-LSP">
+        <data>
+            <item name="Exercise5-LSP" stamp="18353"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise7-LOD">
+        <data>
+            <item name="Exercise7-LOD" stamp="18899"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise8-Packaging">
+        <data>
+            <item name="Exercise8-Packaging" stamp="19174"/>
+        </data>
+    </project-data>
+    <project-data name="Exercise2-SRP">
+        <data>
+            <item name="Exercise2-SRP" stamp="17854"/>
+        </data>
+    </project-data>
+</multisite-config>

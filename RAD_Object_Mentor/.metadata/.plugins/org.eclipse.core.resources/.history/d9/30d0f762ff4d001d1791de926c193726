@@ -1,0 +1,163 @@
+package com.objectmentor.library.gateways;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
+
+import junit.framework.TestCase;
+
+import com.objectmentor.library.models.MediaCopy;
+import com.objectmentor.library.models.LoanReceipt;
+import com.objectmentor.library.models.Media;
+import com.objectmentor.library.models.Patron;
+import com.objectmentor.library.utils.DateUtil;
+
+public class MediaGatewayTest extends TestCase {
+
+  private MediaGateway gateway;
+  private String id1;
+  private String id2;
+  private MediaCopy copy1;
+  private MediaCopy copy2;
+
+  protected void setUp() throws Exception {
+    super.setUp();
+    gateway = new MediaGateway();
+    copy1 = gateway.addCopy(new Media("isbn", "War and Peace", "Tolstoy", Media.BOOK));
+    id1 = copy1.getId();
+    copy2 = gateway.addCopy(new Media("isbn", "War and Peace", "Tolstoy", Media.BOOK));
+    id2 = copy2.getId();
+  }
+
+  public void testAddCopyCreateUniqueId() throws Exception {
+    assertFalse(id1.equals(id2));
+  }
+
+  public void testAddCopiesCreatesUniqueIds() throws Exception {
+    List<MediaCopy> copies = gateway.addCopies(new Media("isbn", "War and Peace", "Tolstoy", Media.BOOK), 3);
+    assertEquals(3, copies.size());
+    assertEquals(5, gateway.findAllCopies("isbn").size());
+    Set<String> ids = new HashSet<String>();
+    for (Iterator<?> iter = gateway.findAllCopies("isbn").iterator(); iter.hasNext();)
+      ids.add(((MediaCopy) iter.next()).getId());
+    assertEquals(5, ids.size());
+  }
+
+  public void testGetAllISBNs() {
+    gateway.addCopy(new Media("isbn2", "Peace and War", "Toy Story", Media.BOOK)).getId();
+    List<String> isbns = gateway.findAllISBNs();
+    assertEquals(2, isbns.size());
+    Iterator<String> iter = isbns.iterator();
+    while (iter.hasNext()) {
+      String isbn = iter.next();
+      assertTrue(isbn, isbn.startsWith("isbn"));
+    }
+  }
+
+  public void testGetAllISBNsAndTitles() {
+    gateway.addCopy(new Media("isbn2", "Peace and War", "Toy Story", Media.BOOK)).getId();
+    gateway.addCopy(new Media("isbn3", "Son of Peace and War", "Toy Story II", Media.BOOK)).getId();
+    Map<String, String> isbnsTitles = gateway.findAllISBNsAndTitles();
+    assertEquals(3, isbnsTitles.size());
+    Iterator iter = isbnsTitles.entrySet().iterator();
+    while (iter.hasNext()) {
+      Entry entry = (Entry) iter.next();
+      assertTrue(((String) entry.getKey()).startsWith("isbn"));
+      assertTrue(((String) entry.getValue()).indexOf("Peace") > -1);
+    }
+  }
+
+  public void testGetCopyCount() {
+    gateway.addCopies(new Media("isbn1", "Peace and War 1", "Toy Story", Media.BOOK), 2);
+    gateway.addCopies(new Media("isbn2", "Peace and War 2", "Toy Story", Media.BOOK), 3);
+    gateway.addCopies(new Media("isbn3", "Peace and War 3", "Toy Story", Media.BOOK), 1);
+    assertEquals(8, gateway.copyCount());
+  }
+
+  public void testGetAllCDsDoesNotIncludeISBNs() {
+    gateway.addCopies(new Media("abcd", "Peace and War, The Musical", "Gilbertolov and Sullivanalov", Media.COMPACT_DISC), 2);
+    gateway.addCopies(new Media("xyz", "The White Album", "The Beatles", Media.COMPACT_DISC), 2);
+    List<List<MediaCopy>> cds = gateway.findAllCDs();
+    assertEquals(2, cds.size());
+    assertEquals(6, gateway.copyCount());
+  }
+
+  public void testGetAllISBNsDoesNotIncludeCompactDiscs() {
+    gateway.addCopies(new Media("abcd", "Peace and War, The Musical", "Gilbertolov and Sullivanalov", Media.COMPACT_DISC), 2);
+    gateway.addCopies(new Media("xyz", "The White Album", "The Beatles", Media.COMPACT_DISC), 2);
+    Map<String, String> isbnsTitles = gateway.findAllISBNsAndTitles();
+    assertEquals(1, isbnsTitles.size());
+    assertEquals(6, gateway.copyCount());
+  }
+
+  public void testFindAvailableCopyReturnsCopyWhenOneCopyOfManyIsBorrowed()
+    throws Exception {
+    gateway.addCopies(new Media("isbn1", "Peace and War 1", "Toy Story", Media.BOOK), 2);
+
+    List copies = gateway.findAllCopies("isbn1");
+    MediaCopy copy = (MediaCopy) copies.get(0);
+    copy.setLoaned(new LoanReceipt(new Patron(DateUtil.dateFromString("1/1/2000"))));
+    assertNotNull(gateway.findAvailableCopy("isbn1"));
+  }
+
+  public void testFindAvailableCopyReturnsNullWhenCopyIsBorrowed() throws Exception {
+    gateway.addCopy(new Media("isbn2", "Peace and War", "Toy Story", Media.BOOK)).getId();
+    List copies = gateway.findAllCopies("isbn2");
+    MediaCopy copy = (MediaCopy) copies.get(0);
+    copy.setLoaned(new LoanReceipt(new Patron(DateUtil.dateFromString("1/1/2000"))));
+    assertEquals(null, gateway.findAvailableCopy("isbn2"));
+  }
+
+  public void testFindAvailableCopyReturnsCopyWhenCopyIsNotBorrowed() throws Exception {
+    assertNotNull(gateway.findAvailableCopy("isbn"));
+  }
+
+  public void testFindAvailableCopyShouldReturnNullIfNoSuchBook() throws Exception {
+    assertNull(gateway.findAvailableCopy("noSuchBook"));
+  }
+
+  public void testContainsShouldReturnFalseIfNoSuchBook() throws Exception {
+    assertFalse(gateway.contains("noSuchBook"));
+  }
+
+  public void testContainsShouldReturnTrueForCorrectId() throws Exception {
+    assertTrue("expected true for recognized isbn", gateway.contains("isbn"));
+  }
+
+  public void testMediaCountShouldBeZeroWhenEmpty() {
+    gateway.clear();
+    assertEquals("expected empty mediaCatalog", 0, gateway.mediaCount());
+  }
+
+  public void testCanFindMoreThanOneBook() throws Exception {
+    List copies = gateway.findAllCopies("isbn");
+    assertEquals(2, copies.size());
+    assertTrue(copies.contains(copy1));
+    assertTrue(copies.contains(copy2));
+  }
+
+  public void testFindCopyShouldReturnCopyForCorrectId() {
+    assertNotNull(gateway.findBookCopy("isbn"));
+  }
+
+  public void testShouldReturnCorrectBookAmongMany() {
+    copy2 = gateway.addCopy(new Media("isbn2", "Peace and War", "Toy Story", Media.BOOK));
+    assertSame(copy1, gateway.findBookCopy("isbn"));
+    assertSame(copy2, gateway.findBookCopy("isbn2"));
+  }
+
+  public void testShouldReturnCorrectMediaAmongBooksAndCDs() {
+    copy2 = gateway.addCopy(new Media("111", "title", "artist", Media.COMPACT_DISC));
+    assertSame(copy1, gateway.findBookCopy("isbn"));
+    assertSame(copy2, gateway.findCdCopy("111"));
+  }
+
+  public void testFindCopyShouldReturnNullForUnaddedBooks() {
+    assertNull(gateway.findBookCopy("NOT ISBN"));
+  }
+
+
+}

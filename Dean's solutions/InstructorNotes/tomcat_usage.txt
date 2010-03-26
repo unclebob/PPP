@@ -1,0 +1,40 @@
+Tomcat README
+
+Exercises 3 and later and the final "Library" project can 
+be run in a web server. These instructions are for Tomcat.
+See websphere_usage.txt for Websphere...
+
+Running Tomcat:
+
+1) Install Tomcat v4 (JDK 1.4) or v5 (JDK v1.5) from tomcat.apache.org.
+2) Define CATALINA_HOME to point to the installation directory 
+(unless already defined).
+3) In a separate shell window, cd to $CATALINA_HOME/bin 
+(or %CATALINA_HOME\bin for Windows).
+4) Run the command:
+	startup.sh    # Unix
+or
+  startup.bat		# Windoze
+
+Install Application:
+
+1) For any of the exercises or the "Library" project, make sure
+the tests pass in Eclipse first.
+2) In another shell, run ant to build and deploy the application:
+	ant all
+
+The first time you run this command, the build will fail while running
+the "remove" target. This is because your application is not yet installed
+in Tomcat. For this first-time installation, run the command:
+	ant install
+	
+All subsequent "ant all" builds should work.
+
+Surf to the "Library"!
+
+1) http://localhost:8080/Library
+
+This is the URL for the exercises, too. Note that if you have set up 
+Tomcat to use a different port, you'll have to adjust the URL
+accordingly.
+

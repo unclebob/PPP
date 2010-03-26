@@ -1,0 +1,15 @@
+Coupling Exercise
+
+Look at exercise-9 jdepend report, "jdepend_report.png". (Hopefully, their computers
+will either have an image viewer that supports PNG or a browser that does.) You may
+consider printing copies to pass around beforehand. This image shows the current 
+package dependencies. The raw data is in "jdepend_report.xml".  See the notes
+"jdepend_usage.txt" for more information on how this data was generated.
+
+
+Drive discussion to elimninate arrows going in the wrong direction.
+
+Resulting structure should be as in PUS jdepend report.
+
+NOTES
+Bob broke these deps by using template method (see Library Project)

@@ -1,0 +1,107 @@
+/* Some properties are defined in environment.rb and dynamically included here. */
+.palette {
+  padding: 2mm;
+  float: left;
+  background-color: #BDE6BD;
+  border-style: groove;
+  border-color: #CCCF79;
+  border-top-style: none;
+  font-size: small;
+  font-family: arial, san-serif;
+  margin-right: 3mm;
+  height: 6.5in;
+}
+
+.header {
+  padding: 2mm;
+  background-color: #BDE6BD;
+  border-color: #CCCF79;
+  border-style: groove;
+/*  border-top-style: none; */
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: .24in;
+  padding: 2mm;
+  border-color: #CCCF79;
+  border-style: groove;
+  background-color: #BDE6BD;
+  font-size: x-small;
+  font-family: arial, san-serif
+}
+
+.canvas {
+/*  background-color: #F5F6D6; */
+  margin-left: 1cm;
+  height: 6in;
+}
+
+body {
+  background-color: #F5F6D6;
+}
+
+.error {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1.4cm;
+  background-color: white;
+  border-color: red;
+  border-style: solid;
+  color: red;
+  font-size: medium;
+  font-family: arial, san-serif
+}
+.warning {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: white;
+  border-color: yellow;
+  border-style: solid;
+  color: purple;
+  font-size:  medium;
+  font-family: arial, san-serif
+}
+.info {
+  bottom: 0;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background-color: white;
+  border-color: green;
+  border-style: solid;#eaebcc
+  color: green;
+  font-size: medium;
+  font-family: arial, san-serif
+}
+
+table.list {
+/*  background-color: #F3D08F; */
+}
+
+tr.head {
+  background-color: #D9B97F;
+  border-color: #D9B97F;
+  text-align: left;
+  margin: 0;
+  padding: 25px;
+}
+tr.even {
+  background-color: #EAEDC5;
+  /* border-color: #EAEDC5; */
+  margin: 0;
+  padding: 25px;
+}
+tr.odd {
+  background-color: #EAEBCC;
+  /* border-color: #EAEBCC; */
+  margin: 0;
+  padding: 25px;
+}

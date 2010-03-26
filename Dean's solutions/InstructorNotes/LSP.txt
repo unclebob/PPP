@@ -1,0 +1,20 @@
+Bug/LSP Violation: HardCover/SoftCover is defined in Media. 
+CDs always report themselves as SoftCover.  This is hard to discover.
+
+Suggest that students try to add a test that causes the failure.
+They should eventually add this to some test (like 
+testReportWithManyOfBoth) and see it fail
+		MediaCopy cd = gateway.addCopy(new CompactDisc("a", "b", "c"));
+    cd.setLoaned(new LoanReceipt(null));
+
+After they are stuck for a while give them a hint. Suggest
+they put some other media into the system and see if that impacts 
+the report. (CDs should not impact this report)
+
+Fix should be to push format and format type down to book and let the
+report check instanceof (against media) OR add method to gateway
+to get BOOKS (not media).
+
+Introduction of Video Cassette type might expose LSP problem if getRewindCharge
+is calculated in media (even if the method is declared abstract in media).
+Discuss.

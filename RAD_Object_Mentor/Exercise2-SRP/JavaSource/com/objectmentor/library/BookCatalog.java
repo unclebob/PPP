@@ -1,0 +1,48 @@
+package com.objectmentor.library;
+
+import java.util.List;
+
+import com.objectmentor.library.data.DataServices;
+import com.objectmentor.library.data.IsbnDoesNotExistException;
+import com.objectmentor.library.models.BookCopy;
+import com.objectmentor.library.models.BookTitle;
+
+public class BookCatalog {
+
+	private DataServices dataServices;
+
+	public BookCatalog(DataServices dataServices) {
+		this.dataServices = dataServices;
+	}
+
+	public BookCopy addCopy(String isbn) {
+		BookTitle bookTitle = dataServices.findTitleByIsbn(isbn);
+		if (bookTitle == null)
+			throw new IsbnDoesNotExistException();
+		return dataServices.addCopy(bookTitle);
+	}
+
+	public BookCopy findCopy(String isbn) {
+		return dataServices.findCopy(isbn);
+	}
+
+	public List<BookCopy> findAllCopies(String isbn) {
+		return dataServices.findAllCopies(isbn);
+	}
+
+	public int bookCount() {
+		return dataServices.bookCount();
+	}
+
+	public boolean containsTitle(String isbn) {
+		return dataServices.containsTitle(isbn);
+	}
+
+	public BookCopy findAvailableCopy(String isbn) {
+		return dataServices.findAvailableCopy(isbn);
+	}
+
+	public BookCopy findCopyById(String copyId) {
+		return dataServices.findCopyById(copyId);
+	}
+}

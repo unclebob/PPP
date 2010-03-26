@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libraryInfos>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home" version="1.4.2_16">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\eclipse" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\core.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\security.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\server.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="c:\program files\Rational Software\RAD6.0\runtimes\base_v5\java\jre" version="1.3.1">
+<bootpath>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5\java\jre\lib\rt.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5\java\jre\lib\i18n.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5\java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5\java\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+<libraryInfo home="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre" version="1.4.2">
+<bootpath>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\core.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\graphics.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\security.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\server.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\xml.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\charsets.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjssefips.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51_stub\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home" version="1.5.0_13">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Rational Software\RAD6.0\eclipse" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\core.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\security.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\server.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.1/Home" version="1.4.2_16">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v6\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre" version="1.4.2">
+<bootpath>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\core.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\graphics.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\security.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\server.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\xml.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\charsets.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjssefips.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v6_stub\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Rational Software\RAD6.0\eclipse\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\core.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\security.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\server.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Rational Software\RAD6.0\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.4/Home" version="1.4.2_16">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.4.2/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\core.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\security.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\server.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre" version="1.4.2">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\core.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\graphics.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\security.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\server.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\xml.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\charsets.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjcefw.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjssefips.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmorb.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmorbapi.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v51_stub\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home" version="1.6.0_05">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="c:\program files\Rational Software\RAD6.0\runtimes\base_v5_stub\java\jre" version="1.3.1">
+<bootpath>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5_stub\java\jre\lib\rt.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5_stub\java\jre\lib\i18n.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5_stub\java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v5_stub\java\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home" version="1.6.0_05">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre" version="1.4.2">
+<bootpath>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\core.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\graphics.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\security.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\server.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\xml.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\charsets.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmcertpathprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjaasactivelm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjaaslm.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjcefw.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjgssprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjssefips.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmjsseprovider.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmorb.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmorbapi.jar"/>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ibmpkcs.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="c:\program files\Rational Software\RAD6.0\runtimes\base_v51\java\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home" version="1.5.0_13">
+<bootpath>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/ui.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/laf.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/sunrsasign.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jsse.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/jce.jar"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/charsets.jar"/>
+</bootpath>
+<extensionDirs>
+<entry path="/Library/Java/Extensions"/>
+<entry path="/System/Library/Java/Extensions"/>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/lib/endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v5_stub\java\jre" version="1.3.1">
+<bootpath>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v5_stub\java\jre\lib\rt.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v5_stub\java\jre\lib\i18n.jar"/>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v5_stub\java\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\IBM\Rational\SDP\6.0\runtimes\base_v5_stub\java\jre\lib\ext"/>
+</extensionDirs>
+</libraryInfo>
+</libraryInfos>

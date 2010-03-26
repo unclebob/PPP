@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <project init="true" name="Library" version="6.0.0">
+        <detail>
+            <id width="48"/>
+            <navigationlabel width="138"/>
+            <filepath width="90"/>
+            <filename width="125"/>
+            <servleturl width="110"/>
+            <pagetitle width="110"/>
+            <pagesize width="94"/>
+            <lastmodified width="110"/>
+            <status width="78"/>
+            <author width="78"/>
+            <pagetemplate width="125"/>
+            <css width="62"/>
+            <navigationcandidate width="166"/>
+            <sitemapcandidate width="166"/>
+            <keywords_metainfo width="138"/>
+            <description_metainfo width="138"/>
+            <abstract_metainfo width="138"/>
+            <author_metainfo width="138"/>
+        </detail>
+    </project>
+</settings>

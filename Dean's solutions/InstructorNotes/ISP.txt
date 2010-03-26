@@ -1,0 +1,23 @@
+Remind people of the Extract Interface refactoring
+
+Extract Interfaces for each type of media on
+MediaGateway:
+- BookGateway
+- CompactDiscGateway
+- etc
+
+one possible outcome is:
+
+public class RealMediaGateway implements BookGateway, CompactDiscGateway, etc
+
+another possible outcome is:
+
+public interface MediaGateway
+public interface BookGateway extends MediaGateway
+public interface CompactDiscGateway extends MediaGateway
+
+Discuss when using the adapter might be appropriate.
+
+Additional constraints for the advanced (faster) students
+ The MediaGateway owners won't let them modify
+ the interace.  (Adpaters are needed for this solution)

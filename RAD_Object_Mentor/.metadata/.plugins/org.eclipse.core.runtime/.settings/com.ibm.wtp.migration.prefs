@@ -1,0 +1,5 @@
+#Mon Mar 26 14:38:02 EST 2007
+com.ibm.etools.webtools.webproject.features.taglibs.id.migratedProjects=Exercise9-PackageDecoupling\:Exercise1-NamingAndLongMethods\:Library\:Library_Test\:Exercise2-SRP\:Exercise7-LOD\:Exercise3-DIP\:Exercise5-LSP\:Exercise4-OCP\:Exercise6-ISP\:Exercise8-Packaging\:
+eclipse.preferences.version=1
+com.ibm.etools.webtools.sdo.jdbc.ui.SDOJarMigrator.id.migratedProjects=Exercise9-PackageDecoupling\:Exercise1-NamingAndLongMethods\:Library\:Library_Test\:Exercise2-SRP\:Exercise7-LOD\:Exercise3-DIP\:Exercise5-LSP\:Exercise4-OCP\:Exercise6-ISP\:Exercise8-Packaging\:
+com.ibm.wtp.migration.WebSettingsMigrator.id.migratedProjects=Exercise9-PackageDecoupling\:Exercise1-NamingAndLongMethods\:Library\:Library_Test\:Exercise2-SRP\:Exercise7-LOD\:Exercise3-DIP\:Exercise5-LSP\:Exercise4-OCP\:Exercise6-ISP\:Exercise8-Packaging\:

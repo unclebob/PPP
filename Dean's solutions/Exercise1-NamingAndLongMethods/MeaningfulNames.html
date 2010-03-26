@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta name="generator" content="Bluefish 1.0.6"/>
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+<style type="text/css">
+/*<![CDATA[*/
+        table.code { 
+            font-family: monspace;
+            border: thick transparent; 
+            font-weight: bold; 
+            color:navy;
+            }
+        pre.code {
+            font-family: monospace; 
+            font-weight: bold; 
+            color:navy;
+            }
+/*]]>*/
+</style>
+
+  <title>Meaningful Names</title>
+</head>
+
+<body>
+  <h1><a name="Top" id="Top"></a>Meaningful Names</h1>
+
+  <p><small>Tim Ottinger</small></p>
+  <hr width="100%" />
+
+  <ol compact="compact" start="1">
+    <li><a href="#Intentional" name="TOC_Intentional" id=
+    "TOC_Intentional">Use Intention-revealing names</a></li>
+
+    <li><a href="#Avoid_Disinfo" name="TOC_Avoid_Disinfo" id=
+    "TOC_Avoid_Disinfo">Avoid Disinformation</a></li>
+
+    <li><a href="#Disambig" name="TOC_Disambig" id=
+    "TOC_Disambig">Make Meaningful Distinctions</a></li>
+
+    <li><a href="#Pronounceable" name="TOC_Pronounceable" id=
+    "TOC_Pronounceable">Use Pronounceable Names</a></li>
+
+    <li><a href="#Searchable" name="TOC_Searchable" id=
+    "TOC_Searchable">Use Searchable names</a></li>
+
+    <li><a href="#Avoid_Encodings" name="TOC_Avoid_Encodings" id=
+    "TOC_Avoid_Encodings">Avoid Encodings</a></li>
+
+    <li><a href="#Mental_Map" name="TOC_Mental_Map" id=
+    "TOC_Mental_Map">Avoid Mental Mapping</a></li>
+
+    <li><a href="#Nouns_Verbs" name="TOC_Nouns_Verbs" id=
+    "TOC_Nouns_Verbs">Use Nouns and Verb Phrases</a></li>
+
+    <li><a href="#Too_Cute" name="TOC_Too_Cute" id=
+    "TOC_Too_Cute">Don't Be Cute</a></li>
+
+    <li><a href="#Pick_One" name="TOC_Pick_One" id=
+    "TOC_Pick_One">Pick One Word Per Concept</a></li>
+
+    <li><a href="#Mult_Meanings" name="TOC_Mult_Meanings" id=
+    "TOC_Mult_Meanings">Don't Pun</a></li>
+
+    <li><a href="#Solution_Domain" name="TOC_Solution_Domain" id=
+    "TOC_Solution_Domain">Use Solution Domain Names</a></li>
+
+    <li><a href="#Problem_Domain" name="TOC_Problem_Domain" id=
+    "TOC_Problem_Domain">Use Problem Domain Names</a></li>
+
+    <li><a href="#In_Context" name="TOC_In_Context" id=
+    "TOC_In_Context">Add Meaningful Context</a></li>
+
+    <li><a href="#Artificial_Context" name="TOC_Artificial_Context"
+    id="TOC_Artificial_Context">Don't Add Gratuitous
+    Context</a></li>
+  </ol>
+  <hr width="100%" />
+
+  <h1>Introduction</h1>
+
+  <p>Maintenance errors occur when a programmer does not correctly
+  understand the code he must modify. The diligent programmer may
+  expend considerable effort to accurately decipher the true intent
+  of a program, even though its purpose was obvious to the original
+  author. Indeed, it takes much more time to determine how to
+  change the code than to make and test the change.</p>
+
+  <p>Some efforts to improve maintainability of code have actually
+  exacerbated the problem by making names less intuitive, less
+  obvious, and less natural. They make it easier to glean the
+  information that <em>was not</em> lost (like type information and
+  scope, still present in variable declarations), without making it
+  easier to discover the more important information that
+  <em>was</em> lost.</p>
+
+  <p>Source code is a form of expression and so
+  quality-of-expression must be a primary concern. Poor
+  quality-of-expression creates ongoing costs and impacts the
+  productivity (hence the reputation) of the team that produces it.
+  Therefore software authors must learn to clearly express the
+  intention of variables, methods, classes, and modules.</p>
+
+  <p>An expressive name for a software object must be clear,
+  precise, and small. This is a guide to better clarity, precision,
+  and terseness in naming. It is the author's hope that you will
+  find it useful.</p>
+
+  <h3><a href="#TOC_Intentional" name="Intentional" id=
+  "Intentional">Use Intention-revealing Names</a></h3>
+
+  <p>We often see comments used where better naming would be
+  appropriate:</p>
+  <pre class="code">
+                int d; // elapsed time in days
+  
+</pre>Such a comment is an excuse for not using a better variable
+name. The name 'd' doesn't evoke a sense of time, nor does the
+comment describe what time interval it represents. It requires a
+change:
+  <pre class="code">
+                int elapsedTimeInDays;
+                int daysSinceCreation;
+                int daysSinceModification;
+                int fileAgeInDays;
+  
+</pre>
+
+  <p>The simple act of using a better name instead of applying a
+  better comment can reduce the difficulty of working with the code
+  we write.</p>
+
+  <p>What is the purpose of this python code?</p>
+  <pre class="code">
+                list1 = []
+                for x in theList:
+                        if x[0] == 4: 
+                                list1 += x;
+                return list1
+  
+</pre>Why is it hard to tell what this code is doing? Clearly there
+are no complex expressions. Spacing and indentation are reasonable.
+There are only three variables and two constants mentioned at all.
+There aren't even any fancy classes or overloaded operators, just a
+list of lists (or so it seems).
+
+  <p>The problem isn't the simplicity of the code but the
+  <em>implicity</em> of the code (to coin a phrase): the degree to
+  which the context is not explicit in the code itself. The code
+  requires me to answer questions such as:</p>
+
+  <ol>
+    <li>What kinds of things are in <code>theList</code>?</li>
+
+    <li>What is the significance of the zeroeth subscript of an
+    item in <code>theList</code>?</li>
+
+    <li>What is the significance of the value <code>4</code>?</li>
+
+    <li>How would I use the list being returned?</li>
+  </ol>This information is not present in the code sample, but it
+  could have been. Say that we're working in a mine sweeper game.
+  We find that the board is a list of cells called
+  <code>theList</code>. Let's rename that to <code>theBoard</code>.
+
+  <p>Each cell on the board is represented by a simple array. We
+  further find that the zeroeth subscript is the location of a
+  status value, and that a status value of 4 means 'flagged'. Just
+  by giving these concepts names we can improve the code
+  considerably:</p>
+  <pre class="code">
+                flaggedCells = []
+                for cell in theBoard:
+                        if cell[STATUS_VALUE] == FLAGGED:
+                                flaggedCells += cell
+                return flaggedCells   
+  
+</pre>Notice that the simplicity of the code is not changed. It
+still has exactly the same number of operators and constants, with
+exactly the same number of nesting levels.
+
+  <p>We can go further and write a simple class for cells instead
+  of using an array of ints. It can include an intention-revealing
+  function (call it <code>isFlagged</code>) to hide the magic
+  numbers. It results in a new version of the function:</p>
+  <pre class="code">
+                flaggedCells = []
+                for cell in theBoard:
+                        if cell.isFlagged():
+                                flaggedCells += cell
+                return flaggedCells
+  
+</pre>or more tersely:
+  <pre class="code">
+                return [ cell for cell in theBoard if cell.isFlagged() ] 
+  
+</pre>Even with the function collapsed to a list comprehension,
+it's not difficult to understand. This is the power of naming.
+
+  <h3><a href="#TOC_Avoid_Disinfo" name="Avoid_Disinfo" id=
+  "Avoid_Disinfo">Avoid Disinformation</a></h3>
+
+  <p>A software author must avoid leaving false clues which obscure
+  the meaning of code.</p>
+
+  <p>We should avoid words whose entrenched meanings vary from our
+  intended meaning. For example, "<tt>hp</tt>", "<tt>aix</tt>", and
+  "<tt>sco</tt>" would be poor variable names because they are the
+  names of Unix platforms or variants. Even if you are coding a
+  hypotenuse and "<tt>hp</tt>" looks like a good abbreviation, it
+  is disinformative.</p>
+
+  <p>Do not refer to a grouping of accounts as an
+  <tt>AccountList</tt> unless it's actually a <code>list</code>.
+  The word <code>list</code> means something specific to CS people.
+  If the container holding the accounts is not actually a list, it
+  may lead to false conclusions. <tt>AccountGroup</tt> or
+  <tt>BunchOfAccounts</tt> would have been better.</p>
+
+  <p>Beware of using names which vary in small ways. How long does
+  it take to spot the subtle difference between a
+  <code>XYZControllerForEfficientHandlingOfStrings</code> in one
+  module and, somewhere a little more distant
+  <code>XYZControllerForEfficientStorageOfStrings</code>? The words
+  have frightfully similar shape.</p>
+
+  <p>With modern Java environments, you have automatic code
+  completion. You will write a few characters of a name and press
+  some hotkey combination (if that) and you will be greeted with a
+  list of possible completions for that name. It is nice if names
+  for very similar things sort together alphabetically, and if the
+  differences are very, very obvious since the developer is likely
+  to pick an object by name without seeing your copious comments or
+  even the list of methods supplied by that class.</p>
+
+  <p>A truly awful example of disinformative names would be the use
+  of lower-case L or uppercase o as variable names, especially in
+  combination. The problem, of course is that they look almost
+  entirely like the constants one and zero (repectively).</p>
+  <pre class="code">
+    int a = l;
+    if ( O = l )
+        a = O1;
+    else
+        l = 01;
+</pre>
+
+  <p>The reader may think this a contrivance, but the author has
+  examined code where such things were abundant. It's a great
+  technique for shrouding code. The author of the code suggested
+  using a different font so that the differences were more obvious,
+  a solution that would have to be passed down to all future
+  developers as oral tradition or in a written document. The
+  problem is conquered with finality and without creating new work
+  products if an author performs a simple renaming.</p>
+
+  <h3><a href="#TOC_Disambig" name="Disambig" id="Disambig">Make
+  Meaningful Distinctions</a></h3>
+
+  <p>A problem arises from writing code solely to satisfy a
+  compiler or interpreter. One can't have the same name referring
+  to two things in the same scope, so one name is changed them in
+  an arbitrary way. Sometimes this is done by misspelling one,
+  leading to the surprising situation where correcting spelling
+  errors leads to an inability to compile.</p>
+
+  <p>It is not sufficient to add number series or noise words, even
+  though the compiler is satisfied. If names must be different,
+  then they should also mean something different.</p>
+
+  <p>Number-series naming (a1, a2, .. aN) is the opposite of
+  intentional naming. Without being disinformative, number series
+  names provide no clue to the intention of the author. Naming by
+  intention and by domain may lend one to use names like
+  <code>lvalue</code> and <code>rvalue</code> or
+  <code>source</code> and <code>destination</code> rather than
+  <code>string1</code> and <code>string2</code>.</p>
+
+  <p>Noise words are another meaningless distinction. Imagine that
+  you have a <tt>Product</tt> class. If you have another called
+  <tt>ProductInfo</tt> or <tt>ProductData</tt>, you have made the
+  names different without making them mean anything different.
+  <tt>Info</tt> and <tt>Data</tt> are indistinct noise words like
+  "a", "an" and "the".</p>
+
+  <p>Noise words are redundant. The word <tt>variable</tt> should
+  never appear in a variable name. The word <tt>table</tt> should
+  never appear in a table name. How is <tt>NameString</tt> better
+  than <tt>Name</tt>? Would a <tt>Name</tt> ever be a floating
+  point number? If so, it breaks an <a href=
+  "#Avoid_Disinfo">earlier rule about disinformation</a>. Imagine
+  finding one class named Customer and another named
+  CustomerObject, what should you understand as the distinction?
+  Which one will represent the best path to a customer's payment
+  history?</p>
+
+  <p>There is an application I know of where this is illustrated.
+  I've changed the names to protect the guilty, but the exact form
+  of the error is:</p>
+  <pre class="code">
+        getSomething();
+        getSomethings();
+        getSomethingInfo();
+</pre>
+
+  <p>Consider context. In the absence of a class named
+  Denomination, <tt>MoneyAmount</tt> is no better than
+  <tt>money</tt>. <tt>CustomerInfo</tt> is no better than
+  <tt>Customer</tt>.</p>
+
+  <p>Disambiguate in such a way that the reader knows what the
+  different versions offer her, instead of merely that they're
+  different.</p>
+
+  <h3><a href="#TOC_Pronounceable" name="Pronounceable" id=
+  "Pronounceable">Use Pronounceable Names</a></h3>
+
+  <p>If you can't pronounce it, you can't discuss it without
+  sounding like an idiot. <i>"Well, over here on the bee cee arr
+  three cee enn tee we have a pee ess zee kyew int, see?"</i> This
+  matters because programming is a social activity.</p>
+
+  <p>A company I know has <tt>genymdhms</tt> (generation date,
+  year, month, day, hour, minute and second) so they walked around
+  saying <i>"gen why emm dee aich emm ess"</i>. I have an annoying
+  habit of pronouncing everything as-written, so I started saying
+  <i>"gen-yah-mudda-hims"</i>. It later was being called this by a
+  host of designers and analysts, and we still sounded silly. But
+  we were in on the joke, so it was fun. Fun or not, we were
+  tolerating poor naming. New developers had to have the variables
+  explained to them, and then they spoke about it in silly made-up
+  words instead of using proper English terms.</p>
+
+  <table width="80%">
+    <tr>
+      <td>
+        <pre class="code">
+class DtaRcrd102 {
+        private Date genymdhms; 
+        private Date modymdhms;
+        private final String pszqint = "102";
+        /* ... */
+};
+  
+</pre>
+      </td>
+
+      <td>
+        <pre class="code">
+class Customer {
+        private Date generationTimestamp; 
+        private Date modificationTimestamp;;
+        private final String recordId = "102";
+        /* ... */
+};
+  
+</pre>
+      </td>
+    </tr>
+  </table>
+
+  <p>Intelligent conversation is now possible:<i>"Hey, Mikey, take
+  a look at this record! The generation timestamp is set to
+  tomorrow's date! How can that be?"</i></p>
+
+  <h3><a href="#TOC_Searchable" name="Searchable" id=
+  "Searchable">Use Searchable Names</a></h3>
+
+  <p>Single-letter names and numeric constants have a particular
+  problem in that they are not easy to locate across a body of
+  text.</p>
+
+  <p>One might easily <tt>grep</tt> for MAX_CLASSES_PER_STUDENT but
+  the number 7 could be more troublesome. Searches may turn up the
+  digit as part of file names, other constant definitions, and in
+  various expressions where the value is used with different
+  intent. It is even worse when a constant is a long number and
+  someone might have transposed digits, thereby creating a bug
+  while simultaneously evading the programmer's search.</p>
+
+  <p>Likewise, the name <tt>e</tt> is a poor choice for any
+  variable for which a programmer might need to search. It is the
+  most common letter in the English language, and likely to show up
+  in every passage of text in every program. In this regard, longer
+  names trump shorter names, and any searchable name trumps a
+  constant in code.</p>
+
+  <p>My personal preference is that single-letter names can ONLY be
+  used as <b>local</b> variables inside <b>short</b> methods. The
+  length of a name should somehow correspond to the size of its
+  scope. If a variable or constant might be seen or used in
+  multiple places in a body of code it is imperative to give it a
+  search-friendly name.</p>
+
+  <p>This rule is less important if the entire team always uses an
+  intelligent IDE that can show you all instances of a given
+  variable without doing a text search, but you will find that even
+  such projects often resort to less elegant search solutions,
+  especially when combating strange build errors.</p>
+
+  <table>
+    <tr>
+      <td>
+        <pre class="code">
+        for (int j=0; j&lt;34; j++) {
+                s += (t[j]*4)/5;
+        }
+  
+</pre>
+      </td>
+
+      <td>
+        <pre class="code">
+        int realDaysPerIdealDay = 4;
+        const int WORK_DAYS_PER_WEEK = 5;
+        /*...*/
+        for (int j=0; j &lt; NUMBER_OF_TASKS; j++) {
+                int realTaskDays = taskEstimate[j] * realDaysPerIdealDay;
+                int realTaskWeeks = (realdays / WORK_DAYS_PER_WEEK);
+                sum+= realTaskWeeks;
+        }
+  
+</pre>
+      </td>
+    </tr>
+  </table>
+
+  <p>Note that "sum", above, is not a particularly useful name, but
+  at least is searchable. The intentionally-named code makes for a
+  longer function, but consider how much easier it will be to find
+  WORK_DAYS_PER_WEEK than to find all the places where 5 was used,
+  and filter the list down to just the instances with the intended
+  meaning.</p>
+
+  <h3><a href="#TOC_Avoid_Encodings" name="Avoid_Encodings" id=
+  "Avoid_Encodings">Avoid Encodings</a></h3>
+
+  <p>Encoded names require deciphering. It hardly seems reasonable
+  to require each new employee to learn an encoding "language" in
+  addition to learning the (usually considerable) body of code that
+  they'll be working in. It is an unnecessary mental burden when
+  trying to solve a problem. Encoded names are seldom <a href=
+  "#Pronounceable">pronounceable</a> and are easy to mistype.</p>
+
+  <p>In days of old, when you worked in name-length-challenged
+  languages, you probably violated this rule with impunity and
+  regret. Fortran forced it by basing type on the first letter,
+  making the first letter a code for the type. Early versions of
+  BASIC allowed only a letter plus one digit. Hungarian Notation
+  (HN) has taken this to a whole new level</p>
+
+  <p>HN was considered to be pretty important back in the Windows C
+  API, when everything was an integer handle or a long pointer or a
+  void pointer, or one of several implementations of "string" (with
+  different uses and attributes). In <em>modern</em> languages we
+  have much richer type systems. There is a trend toward smaller
+  classes and shorter functions so that one can always see the
+  point of declaration of each variable they're using.</p>
+
+  <p>Modern languages don't need type encoding. Objects are
+  strongly (and often dynamically) typed, and editing environments
+  have advanced. You may feel naked without type encoding, but with
+  "duck typing" your type-encoded variable names will usually be
+  wrong anyway. You don't need it, can't do it reliably, and can
+  learn to live without it.</p>
+
+  <p>You don't need to prefix member variables with "m_"
+  anymore.</p>
+
+  <table>
+    <tr>
+      <td>
+        <pre class="code">
+  class { 
+     String m_psz; // The textual description
+     void setName(String psz) {
+        m_psz = psz;
+     }
+  }
+  
+</pre>
+      </td>
+
+      <td>
+        <pre class="code">
+  class { 
+     String description;
+     void setName(String description) { 
+        this.description = description;
+     }
+  }
+  
+</pre>
+      </td>
+    </tr>
+  </table>
+
+  <p>The other problem with prefix encoding is that people quickly
+  learn to look past the prefix (or stop short of the suffix) to
+  the meaningful part of the name. Those carefully crafted name
+  systems end up being ignored (almost) totally. Eventually the
+  prefixes are left unmaintained just as comments are left
+  unmaintained.</p>
+  <pre class="code">
+  std::wstring pszName = L"hello"; // name not changed when type changed!
+  
+</pre>
+
+  <h3><a href="#TOC_Mental_Map" name="Mental_Map" id=
+  "Mental_Map">Avoid Mental Mapping</a></h3>
+
+  <p>Readers shouldn't have to mentally translate your names into
+  other names they already know. This problem generally arises from
+  a choice to use neither <a href="#Problem_Domain">problem domain
+  terms</a> nor <a href="#Solution_Domain">solution domain
+  terms.</a></p>
+
+  <p>This is a problem with single-letter variable names. Certainly
+  a loop counter may be named <code>i</code> or <code>j</code> or
+  <code>k</code> (though never <code>l</code>!) if its scope is
+  very, very small and no other names can conflict with it. These
+  are allowable because those are traditional solution-domain
+  names. But generally, a single letter name <i>stands for</i>
+  something else, or else has no meaning at all. There can be no
+  worse reason for using the name <code>'c'</code> than <i>because
+  <tt>a</tt> and <tt>b</tt> were already taken</i>.</p>
+
+  <p>This has been a a problem with really smart programmers who
+  can manipulate more than the standard 7-plus-or-minus-two symbols
+  easily in their heads. They map so easily among twelve or fifteen
+  arbitrarily-named objects that they can't image anything easier
+  than the simple fact that r is the lower-cased version of the url
+  with the host and scheme removed.</p>
+
+  <p>Smart is overrated. Clarity is king. The very smart must use
+  their talent to write code that others are less likely to
+  misunderstand.</p>
+
+  <h3><a href="#TOC_Nouns_Verbs" name="Nouns_Verbs" id=
+  "Nouns_Verbs">Use Noun and Verb Phrases</a></h3>
+
+  <p>Classes and objects should have noun or noun phrase names.</p>
+
+  <p>There are some methods (commonly called
+  <dfn>"accessors"</dfn>) which calculate and/or return a value.
+  These reasonably may have noun names. This way accessing a
+  person's first name can read as follows:</p>
+  <pre class="code">
+        string x = person.name();
+   
+</pre>because it is as obvious as:
+  <pre class="code">
+        string wholeName = person.getName();
+        
+</pre>
+
+  <p>Other methods (sometimes called <dfn>"mutators"</dfn>, though
+  not so commonly anymore) cause something to happen. These
+  represent a small "transaction" on the object (and generally
+  should be a complete action). Mutators should have verb or
+  verb-phrase names. This way, changing a name would read:</p>
+  <pre class="code">
+        fred.changeNameTo("mike")
+</pre>
+
+  <p>You will notice that the above line reads more like a sentence
+  than a lot of code. It leaves a dangling "to", which is completed
+  by the parameter. The intention is to make the parameter list
+  more obvious so that it is harder to make foolish errors.</p>
+
+  <p>Another trend is to use a named creation function, rather than
+  yet another overloaded constructor. It can be more obvious to
+  read the creation of a complex number using</p>
+  <pre class="code">
+    Complex.FromRealNumber(23.0);
+  
+</pre>than using the constructor version
+  <pre class="code">
+    new Complex(23.0);
+</pre>
+
+  <p>As a class designer, does this sound boringly unimportant? If
+  so, then go write code that uses your classes. The best way to
+  test an interface is to use it and look for ugly, contrived, or
+  confusing text. The most popular way to do this in the 21st
+  century is to write <i>Unit Tests</i> for the module. If you have
+  trouble reading the tests (or your partners do) then rework is in
+  order.</p>
+
+  <p>Over time we've found that this rule extends even to
+  constructors. Rather than having a lot of overloaded constructors
+  and having to chose among them by their parameter lists, we
+  frequently create named creation functions as class (static)
+  methods.</p>
+
+  <h3><a href="#TOC_Too_Cute" name="Too_Cute" id="Too_Cute">Don't
+  Be Cute</a></h3>
+
+  <p>If names are too clever, they will be memorable only to people
+  who share the author's sense of humor, and only as long as they
+  remember the joke. Will the people know what the function named
+  <code>HolyHandGrenade</code> is supposed to do? Sure, it's cute,
+  but maybe in this case <code>DeleteItems</code> might be a better
+  name. Save the comedy for comments, where busy people don't have
+  to read them.</p>
+
+  <p><i>Choose clarity over entertainment value</i>.</p>
+
+  <h3><a href="#TOC_Pick_One" name="Pick_One" id="Pick_One">Pick
+  One Word Per Concept</a></h3>
+
+  <p>Pick one word for one abstract function and stick with it. I
+  hear that the Eiffel libraries excel at this, and I know that the
+  C++ STL is very consistent. Sometimes the names seem a little odd
+  (like <tt>pop_front</tt> for a list), but being consistent will
+  reduce the overall learning curve for the whole library.</p>
+
+  <p>For instance, it's confusing to have <tt>fetch</tt>,
+  <tt>retrieve</tt> and <tt>get</tt> as equivalent methods of the
+  different classes. How do you remember which method name goes
+  with which class? Sadly, you often have to remember which
+  company, group, or individual wrote the library or class in order
+  to remember which term was used. Otherwise, you spend an awful
+  lot of time browsing through headers and previous code
+  samples.</p>
+
+  <p>It's not as bad as it used to be. Modern editing environments
+  like Eclipse, IntelliJ, Eric, and the like will provide hints to
+  you. You type the name of an object and a dot, and up pops a list
+  of methods you can call. But note that the list doesn't give you
+  the comments you wrote around your function names and parameter
+  lists. You are lucky if it gives the parameter names from
+  function declarations. The function names have to stand alone,
+  and they have to be consistent in order for you to pick the
+  correct method without any additional exploration.</p>
+
+  <p>Likewise, it's confusing to have a <tt>controller</tt> and a
+  <tt>manager</tt> and a <tt>driver</tt> in the same process. What
+  is the essential difference between a DeviceManager and a
+  ProtocolController? Why are both not controllers, or both not
+  managers? Are they both Drivers, really? The name leads you to
+  expect two objects that have very different <i>type</i> as well
+  as having different <i>classes.</i></p>
+
+  <p>A consistent lexicon is a great boon to programmers who must
+  use your classes, even if it may seem like a pain while
+  developing the classes. If you have to, you can write it into a
+  wiki page or a document, but then it must be maintained. Don't
+  create documents lightly.</p>
+
+  <h3><a href="#TOC_Mult_Meanings" name="Mult_Meanings" id=
+  "Mult_Meanings">Don't Pun</a></h3>
+
+  <p>Try to never use the same word for two purposes.</p>
+
+  <p>After implementing the previous rule, you may have many
+  classes with an <code>add</code> method. As long as the parameter
+  lists are semantically equal and the desired result is the same,
+  all is well.</p>
+
+  <p>However one might decide to use the word <code>add</code> for
+  "consistency" when they are not in fact <i>adding</i> in the same
+  sense. Perhaps in many classes "add" will create a new value by
+  adding or concatenating two existing value. It might seem
+  consistent to call your new method <code>add</code> even though
+  it really only puts its single parameter into a collection. In
+  this case, the semantics are different, and so there should be
+  two different words used (perhaps <code>add</code> and either
+  <code>insert</code> or <code>append</code>). Using the same term
+  for two different ideas is essentially a <em>pun</em>.</p>
+
+  <p>However surprising it may seem to say so, you want your
+  readers to afford some lazy reading and assumptions. You want
+  your code to be a quick skim, not an intense study. You want to
+  use the popular paperback model whereby the author is responsible
+  for making himself clear and not the academic model where it is
+  the scholar's job to dig the meaning out of the paper.</p>
+
+  <p>Again, you may need to write up an official project glossary
+  if you start to have problems keeping the set of names and
+  concepts clear. You might need to consider using more <a href=
+  "#Disambig">meaningful distinctions</a>.</p>
+
+  <h3><a href="#TOC_Solution_Domain" name="Solution_Domain" id=
+  "Solution_Domain">Use Solution Domain Names</a></h3>
+
+  <p>Go ahead, use computer science (CS) terms, algorithm names,
+  pattern names, math terms, etc.</p>
+
+  <p>It may seem a heretical notion, but you don't want your
+  developers having to run back and forth to the customer asking
+  what every name means <b><i>if</i></b> they already know the
+  concept by a different name.</p>
+
+  <p>We're talking about code here, so you're more likely to have
+  your code maintained by a CS major or informed programmer than by
+  a domain expert with no programming background. End users of a
+  system very seldom read the code, but the maintainers have
+  to.</p>
+
+  <h3><a href="#TOC_Problem_Domain" name="Problem_Domain" id=
+  "Problem_Domain">Use Problem Domain Names</a></h3>
+
+  <p>When there is no `programmer-ese' for what you're doing, use
+  the name from the problem domain. At least the programmer who
+  maintains your code <b>can</b> ask his boss what it means.</p>
+
+  <p>In analysis, of course, this is the superior rule to&nbsp;
+  <a href="#Solution_Domain">[Use Solution Domain Names]</a>,
+  because the end-user is the target audience.</p>
+
+  <h3><a href="#TOC_In_Context" name="In_Context" id=
+  "In_Context">Add Meaningful Context</a></h3>
+
+  <p>There are few names which are meaningful in and of themselves.
+  Most, however are not. Instead, you need to place names in
+  context for your reader by enclosing them in well-named classes,
+  functions, or namespaces. When all else fails, then prefixing the
+  name may be necessary as a last resort.</p>
+
+  <p>If you have a number of variables with the same prefix
+  (address_firstName, address_lastname, address_Street), it can be
+  a pretty clear clue that you need to create a class for them to
+  live in. As a short-term measure and a means to an end, prefixing
+  might not be intolerable. After all, every road out of Rome is
+  also a road into Rome.</p>
+
+  <p>The term `<dfn>tree</dfn>' needs some disambiguation if it
+  appears in a forestry application. You may have syntax trees,
+  red-black or b-trees, and also elms, oaks, and pines. The word
+  `tree' is a good word, and is not to be avoided, but it must be
+  placed in context every place it is used.</p>
+
+  <p>If you review a program or enter into a conversation where the
+  word "tree" could mean either, and you aren't sure, then the
+  author (speaker) will have to clarify. Sadly, source won't
+  explain itself to us, so it must be made clear.</p>
+
+  <h3><a href="#TOC_Artificial_Context" name="Artificial_Context"
+  id="Artificial_Context">Don't add Gratuitous Context</a></h3>
+
+  <p>In an imaginary application called "Gas Station Deluxe", it is
+  a bad idea to prefix every class with `<tt>GSD</tt>'. Frankly,
+  you are working against your tools. You type G and press the
+  completion key, and are rewarded with a mile-long list of
+  <i>every class in the system</i>. Is that wise? Why make it hard
+  for the IDE to help you? Otherwise, the regular developer will
+  have to learn to ignore the GSD at the front.</p>
+
+  <p>Likewise, say you invented a `Mailing Address' class in
+  <tt>GSD</tt>'s accounting module, and you named it
+  <tt>GSDAccountAddress</tt>. Later, you need a mailing address for
+  your customer contact application. Do you use
+  `<tt>GSDAccountAddress</tt>'? Does it sound like the right name?
+  10 of 17 characters are redundant or irrelevant</p>
+
+  <p>Shorter names are generally better than longer ones, if they
+  are clear. Add no more context to a name than is necessary.</p>
+
+  <p>The names `<tt>accountAddress</tt>' and
+  `<tt>customerAddress</tt>' are fine names for instances of the
+  class Address but could be poor names for classes. Address is a
+  fine name for a class. If I need to differentiate between MAC
+  addresses, port addresses, and web addresses, I might consider
+  PostalAddress, MAC, and URI. The resulting names are <i>more</i>
+  precise, and isn't precision the point of all naming?</p>
+
+  <h3><a name="Final_Words" id="Final_Words"></a>Final Words
+  ...</h3>
+
+  <p>The hardest thing about choosing good names is that it
+  requires good descriptive skills and a shared cultural
+  background. This is a teaching issue, rather than a technical,
+  business, or management issue. As a result many people in this
+  field don't do it very well.</p>
+
+  <p>People are also afraid of renaming things, for fear that some
+  other developers will object. I have been working with people who
+  do not share that fear, and I find that I am actually grateful
+  when names change (for the better). Most of the time, I don't
+  really memorize the names of classes and methods like I thought I
+  did. I use the modern tools to deal with details like that, and I
+  focus on whether my code reads like paragraphs and sentences, or
+  at least like tables and data structure (a sentence isn't always
+  the best way to display data). You will probably end up
+  surprising someone when you rename, just like you might with any
+  other code <i>improvement</i>, don't let it stop you in your
+  tracks.</p>
+
+  <p>Follow some of these rules, and see if you don't improve the
+  readability of your code. If you are maintaining someone else's
+  code, use refactoring tools to help resolve these problems. It
+  will pay off in the short term, and continue to pay in the long
+  run.</p>
+
+  <h3>Notes</h3>
+
+  <p>This paper grew out of some postings made on usenet,
+  specifically <a href="news:comp.object">comp.object</a>, in 1997.
+  There was some response, which was incorporated from its many
+  sources, and it is presented here in entirety, enhanced a bit.
+  Thanks to all involved.</p>
+
+  <p>Brad Appleton took the time to convert the original textual
+  version to hypertext, and I thank him for the this
+  encouragement.</p>
+
+  <p>Thanks to all my friends at Object Mentor for encouraging
+  updates to the rules.</p>
+</body>
+</html>

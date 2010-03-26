@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launchConfiguration type="com.ibm.ws.ast.st.v6.batchProcessLaunchConfigurationType">
+<stringAttribute key="wasInstallPath" value="C:/Program Files/IBM/Rational/SDP/6.0/runtimes/base_v6/profiles/default"/>
+<stringAttribute key="launchMode" value="run"/>
+<stringAttribute key="wasServerName" value="server1"/>
+</launchConfiguration>

@@ -1,0 +1,17 @@
+<!-- Example tomcat-users.xml you should follow with your own installation of tomcat.
+-->
+<?xml version='1.0' encoding='utf-8'?>
+<tomcat-users>
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  
+  <!-- Add the "manager" role and add a user for yourself, with the same name as
+  	   you login name (the password is arbitrary). Also put yourself in the manager role.
+  -->
+  <role rolename="manager"/>
+  <user username="my_user_name" password="my_user_name" roles="tomcat,manager"/>
+  
+  <user username="tomcat" password="tomcat" roles="tomcat"/>
+  <user username="role1" password="tomcat" roles="role1"/>
+  <user username="both" password="tomcat" roles="tomcat,role1"/>
+</tomcat-users>

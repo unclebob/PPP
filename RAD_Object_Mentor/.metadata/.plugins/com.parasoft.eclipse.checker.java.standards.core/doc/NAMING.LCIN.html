@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<TITLE>
+Avoid class or interface names which are more than 14 characters long
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+Avoid class or interface names which are more than 14 characters long [NAMING.LCIN-4]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+
+This rule identifies classes or interfaces with names longer
+than 14 characters. An error is reported for each occurrence.
+
+</PRE>
+<STRONG>
+NOTES
+</STRONG>
+<PRE>
+
+N/A
+
+</PRE>
+<STRONG>
+SECURITY RELEVANCE
+</STRONG>
+<PRE>
+
+N/A
+
+</PRE>
+<STRONG>
+PARAMETERS
+</STRONG>
+<PRE>
+
+N/A
+
+</PRE>
+<STRONG>
+BENEFITS
+</STRONG>
+<PRE>
+
+Although a long name is more readable than a short name, it takes longer
+to type and is more difficult to remember.
+
+</PRE>
+<STRONG>
+DRAWBACKS
+</STRONG>
+<PRE>
+
+N/A
+
+</PRE>
+<STRONG>
+SINCE
+</STRONG>
+<PRE>
+
+v4.5
+
+</PRE>
+<STRONG>
+EXAMPLE
+</STRONG>
+<PRE>
+
+package examples.rules.naming;
+
+public class LCIN {
+
+    public void method() {
+        System.out.println("Index : " + ExampleRuleNamingLCINInterface.INDEX);
+    }
+}
+
+interface ExampleRuleNamingLCINInterface {  // VIOLATION
+    int INDEX = 12;
+}
+
+</PRE>
+<STRONG>
+REPAIR
+</STRONG>
+<PRE>
+
+Rename the interface.
+
+package examples.rules.naming;
+
+public class LCINFixed {
+
+    public void method() {
+        System.out.println("Index : " + Constants.INDEX);
+    }
+}
+
+interface Constants {  // FIXED
+    int INDEX = 12;
+}
+
+</PRE>
+<STRONG>
+REFERENCES
+</STRONG>
+<PRE>
+
+<A href="http://www.ambysoft.com/javaCodingStandards.pdf">http://www.ambysoft.com/javaCodingStandards.pdf (p.9)</A>
+
+</PRE>
+</BODY>
+</HTML>

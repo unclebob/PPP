@@ -1,0 +1,739 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="com.objectmentor">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.objectmentor.library.gateways">
+            <Stats>
+                <TotalClasses>9</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>5</AbstractClasses>
+                <Ca>5</Ca>
+                <Ce>1</Ce>
+                <A>0.56</A>
+                <I>0.17</I>
+                <D>0.28</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="BookGateway.java">
+                    com.objectmentor.library.gateways.BookGateway
+                </Class>
+                <Class sourceFile="CompactDiscGateway.java">
+                    com.objectmentor.library.gateways.CompactDiscGateway
+                </Class>
+                <Class sourceFile="ComputerGateway.java">
+                    com.objectmentor.library.gateways.ComputerGateway
+                </Class>
+                <Class sourceFile="MediaGateway.java">
+                    com.objectmentor.library.gateways.MediaGateway
+                </Class>
+                <Class sourceFile="PatronGateway.java">
+                    com.objectmentor.library.gateways.PatronGateway
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CdDoesNotExistException.java">
+                    com.objectmentor.library.gateways.CdDoesNotExistException
+                </Class>
+                <Class sourceFile="ComputerDoesNotExistException.java">
+                    com.objectmentor.library.gateways.ComputerDoesNotExistException
+                </Class>
+                <Class sourceFile="IsbnDoesNotExistException.java">
+                    com.objectmentor.library.gateways.IsbnDoesNotExistException
+                </Class>
+                <Class sourceFile="PatronDoesNotExistException.java">
+                    com.objectmentor.library.gateways.PatronDoesNotExistException
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.models</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+                <Package>com.objectmentor.library.web.controller.patrons</Package>
+                <Package>com.objectmentor.library.web.utils</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.libraryRules">
+            <Stats>
+                <TotalClasses>15</TotalClasses>
+                <ConcreteClasses>12</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>5</Ca>
+                <Ce>5</Ce>
+                <A>0.2</A>
+                <I>0.5</I>
+                <D>0.3</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Damageable.java">
+                    com.objectmentor.library.libraryRules.Damageable
+                </Class>
+                <Class sourceFile="ReturnCondition.java">
+                    com.objectmentor.library.libraryRules.ReturnCondition
+                </Class>
+                <Class sourceFile="TimeSource.java">
+                    com.objectmentor.library.libraryRules.TimeSource
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BookCatalog.java">
+                    com.objectmentor.library.libraryRules.BookCatalog
+                </Class>
+                <Class sourceFile="CompactDiscCatalog.java">
+                    com.objectmentor.library.libraryRules.CompactDiscCatalog
+                </Class>
+                <Class sourceFile="ComputerCatalog.java">
+                    com.objectmentor.library.libraryRules.ComputerCatalog
+                </Class>
+                <Class sourceFile="ComputerLoanReceipt.java">
+                    com.objectmentor.library.libraryRules.ComputerLoanReceipt
+                </Class>
+                <Class sourceFile="DamagedCondition.java">
+                    com.objectmentor.library.libraryRules.DamagedCondition
+                </Class>
+                <Class sourceFile="Library.java">
+                    com.objectmentor.library.libraryRules.Library
+                </Class>
+                <Class sourceFile="Money.java">
+                    com.objectmentor.library.libraryRules.Money
+                </Class>
+                <Class sourceFile="PatronRegistrar.java">
+                    com.objectmentor.library.libraryRules.PatronRegistrar
+                </Class>
+                <Class sourceFile="PrintAuthorization.java">
+                    com.objectmentor.library.libraryRules.PrintAuthorization
+                </Class>
+                <Class sourceFile="PrintRecord.java">
+                    com.objectmentor.library.libraryRules.PrintRecord
+                </Class>
+                <Class sourceFile="PrintUsage.java">
+                    com.objectmentor.library.libraryRules.PrintUsage
+                </Class>
+                <Class sourceFile="StandardTimeSource.java">
+                    com.objectmentor.library.libraryRules.StandardTimeSource
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.services</Package>
+                <Package>com.objectmentor.library.utils</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+                <Package>com.objectmentor.library.web.controller.patrons</Package>
+                <Package>com.objectmentor.library.web.utils</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.mocks">
+            <Stats>
+                <TotalClasses>13</TotalClasses>
+                <ConcreteClasses>12</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>5</Ce>
+                <A>0.08</A>
+                <I>0.56</I>
+                <D>0.37</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="CardPrinter.java">
+                    com.objectmentor.library.mocks.CardPrinter
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="MockCardPrinter.java">
+                    com.objectmentor.library.mocks.MockCardPrinter
+                </Class>
+                <Class sourceFile="MockCompactDiscService.java">
+                    com.objectmentor.library.mocks.MockCompactDiscService
+                </Class>
+                <Class sourceFile="MockComputerGateway.java">
+                    com.objectmentor.library.mocks.MockComputerGateway
+                </Class>
+                <Class sourceFile="MockHttpServletRequest.java">
+                    com.objectmentor.library.mocks.MockHttpServletRequest
+                </Class>
+                <Class sourceFile="MockHttpServletResponse.java">
+                    com.objectmentor.library.mocks.MockHttpServletResponse
+                </Class>
+                <Class sourceFile="MockHttpSession.java">
+                    com.objectmentor.library.mocks.MockHttpSession
+                </Class>
+                <Class sourceFile="MockIsbnService.java">
+                    com.objectmentor.library.mocks.MockIsbnService
+                </Class>
+                <Class sourceFile="MockJspWriter.java">
+                    com.objectmentor.library.mocks.MockJspWriter
+                </Class>
+                <Class sourceFile="MockMediaGateway.java">
+                    com.objectmentor.library.mocks.MockMediaGateway
+                </Class>
+                <Class sourceFile="MockPageContext.java">
+                    com.objectmentor.library.mocks.MockPageContext
+                </Class>
+                <Class sourceFile="MockPatronGateway.java">
+                    com.objectmentor.library.mocks.MockPatronGateway
+                </Class>
+                <Class sourceFile="MockTimeSource.java">
+                    com.objectmentor.library.mocks.MockTimeSource
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.services</Package>
+                <Package>com.objectmentor.library.utils</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+                <Package>com.objectmentor.library.web.utils</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.models">
+            <Stats>
+                <TotalClasses>10</TotalClasses>
+                <ConcreteClasses>9</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <Ca>9</Ca>
+                <Ce>1</Ce>
+                <A>0.1</A>
+                <I>0.1</I>
+                <D>0.8</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Media.java">
+                    com.objectmentor.library.models.Media
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Address.java">
+                    com.objectmentor.library.models.Address
+                </Class>
+                <Class sourceFile="Book.java">
+                    com.objectmentor.library.models.Book
+                </Class>
+                <Class sourceFile="CompactDisc.java">
+                    com.objectmentor.library.models.CompactDisc
+                </Class>
+                <Class sourceFile="Computer.java">
+                    com.objectmentor.library.models.Computer
+                </Class>
+                <Class sourceFile="LoanReceipt.java">
+                    com.objectmentor.library.models.LoanReceipt
+                </Class>
+                <Class sourceFile="MediaCopy.java">
+                    com.objectmentor.library.models.MediaCopy
+                </Class>
+                <Class sourceFile="Patron.java">
+                    com.objectmentor.library.models.Patron
+                </Class>
+                <Class sourceFile="Periodical.java">
+                    com.objectmentor.library.models.Periodical
+                </Class>
+                <Class sourceFile="ReturnReceipt.java">
+                    com.objectmentor.library.models.ReturnReceipt
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.libraryRules</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.online</Package>
+                <Package>com.objectmentor.library.services</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+                <Package>com.objectmentor.library.web.controller.patrons</Package>
+                <Package>com.objectmentor.library.web.utils</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.offline">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>2</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>0.67</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="InMemoryCardPrinter.java">
+                    com.objectmentor.library.offline.InMemoryCardPrinter
+                </Class>
+                <Class sourceFile="InMemoryCompactDiscService.java">
+                    com.objectmentor.library.offline.InMemoryCompactDiscService
+                </Class>
+                <Class sourceFile="InMemoryComputerGateway.java">
+                    com.objectmentor.library.offline.InMemoryComputerGateway
+                </Class>
+                <Class sourceFile="InMemoryIsbnService.java">
+                    com.objectmentor.library.offline.InMemoryIsbnService
+                </Class>
+                <Class sourceFile="InMemoryMediaGateway.java">
+                    com.objectmentor.library.offline.InMemoryMediaGateway
+                </Class>
+                <Class sourceFile="InMemoryPatronGateway.java">
+                    com.objectmentor.library.offline.InMemoryPatronGateway
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.services</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.online">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>0.67</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="WorldCatIsbnService.java">
+                    com.objectmentor.library.online.WorldCatIsbnService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.services</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.services">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>0</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>5</Ca>
+                <Ce>1</Ce>
+                <A>1</A>
+                <I>0.17</I>
+                <D>0.17</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="CompactDiscService.java">
+                    com.objectmentor.library.services.CompactDiscService
+                </Class>
+                <Class sourceFile="IsbnService.java">
+                    com.objectmentor.library.services.IsbnService
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.models</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.online</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.utils">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>4</Ca>
+                <Ce>0</Ce>
+                <A>0</A>
+                <I>0</I>
+                <D>1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DateUtil.java">
+                    com.objectmentor.library.utils.DateUtil
+                </Class>
+                <Class sourceFile="StringUtil.java">
+                    com.objectmentor.library.utils.StringUtil
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+                <Package>com.objectmentor.library.web.servlet</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.web.controller">
+            <Stats>
+                <TotalClasses>16</TotalClasses>
+                <ConcreteClasses>13</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <Ca>3</Ca>
+                <Ce>9</Ce>
+                <A>0.19</A>
+                <I>0.75</I>
+                <D>0.06</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Controller.java">
+                    com.objectmentor.library.web.controller.Controller
+                </Class>
+                <Class sourceFile="MediaController.java">
+                    com.objectmentor.library.web.controller.MediaController
+                </Class>
+                <Class sourceFile="ServiceProvider.java">
+                    com.objectmentor.library.web.controller.ServiceProvider
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ActionResult.java">
+                    com.objectmentor.library.web.controller.ActionResult
+                </Class>
+                <Class sourceFile="Application.java">
+                    com.objectmentor.library.web.controller.Application
+                </Class>
+                <Class sourceFile="BooksController.java">
+                    com.objectmentor.library.web.controller.BooksController
+                </Class>
+                <Class sourceFile="CompactDiscsController.java">
+                    com.objectmentor.library.web.controller.CompactDiscsController
+                </Class>
+                <Class sourceFile="ControllerFinder.java">
+                    com.objectmentor.library.web.controller.ControllerFinder
+                </Class>
+                <Class sourceFile="DebugController.java">
+                    com.objectmentor.library.web.controller.DebugController
+                </Class>
+                <Class sourceFile="MediaCopyIdComparator.java">
+                    com.objectmentor.library.web.controller.MediaCopyIdComparator
+                </Class>
+                <Class sourceFile="MockServiceProvider.java">
+                    com.objectmentor.library.web.controller.MockServiceProvider
+                </Class>
+                <Class sourceFile="OffLineServiceProvider.java">
+                    com.objectmentor.library.web.controller.OffLineServiceProvider
+                </Class>
+                <Class sourceFile="OnLineServiceProvider.java">
+                    com.objectmentor.library.web.controller.OnLineServiceProvider
+                </Class>
+                <Class sourceFile="PatronsController.java">
+                    com.objectmentor.library.web.controller.PatronsController
+                </Class>
+                <Class sourceFile="TestController.java">
+                    com.objectmentor.library.web.controller.TestController
+                </Class>
+                <Class sourceFile="WelcomeController.java">
+                    com.objectmentor.library.web.controller.WelcomeController
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.offline</Package>
+                <Package>com.objectmentor.library.online</Package>
+                <Package>com.objectmentor.library.services</Package>
+                <Package>com.objectmentor.library.utils</Package>
+                <Package>com.objectmentor.library.web.servlet</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.web.controller.patrons</Package>
+                <Package>com.objectmentor.library.web.servlet</Package>
+                <Package>com.objectmentor.library.web.utils</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.web.controller.patrons">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>4</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BooksController.java">
+                    com.objectmentor.library.web.controller.patrons.BooksController
+                </Class>
+                <Class sourceFile="LoanRecord.java">
+                    com.objectmentor.library.web.controller.patrons.LoanRecord
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.web.servlet">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>2</Ce>
+                <A>0</A>
+                <I>0.67</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ControllerServlet.java">
+                    com.objectmentor.library.web.servlet.ControllerServlet
+                </Class>
+                <Class sourceFile="ServletHelper.java">
+                    com.objectmentor.library.web.servlet.ServletHelper
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.utils</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.web.tags">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>0</Ce>
+                <A>0</A>
+                <I>0</I>
+                <D>1</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ActionPathTag.java">
+                    com.objectmentor.library.web.tags.ActionPathTag
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.objectmentor.library.web.utils">
+            <Stats>
+                <TotalClasses>1</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>0</Ca>
+                <Ce>5</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ControllerTestHelper.java">
+                    com.objectmentor.library.web.utils.ControllerTestHelper
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.objectmentor.library.gateways</Package>
+                <Package>com.objectmentor.library.libraryRules</Package>
+                <Package>com.objectmentor.library.mocks</Package>
+                <Package>com.objectmentor.library.models</Package>
+                <Package>com.objectmentor.library.web.controller</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="com.objectmentor.library.gateways">
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.libraryRules">
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.mocks">
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.models">
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.offline">
+            <Package>com.objectmentor.library.mocks</Package>
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.online">
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.services">
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.web.controller">
+            <Package>com.objectmentor.library.mocks</Package>
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.web.controller.patrons">
+            <Package>com.objectmentor.library.web.controller</Package>
+            <Package>com.objectmentor.library.mocks</Package>
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.web.servlet">
+            <Package>com.objectmentor.library.web.controller</Package>
+            <Package>com.objectmentor.library.mocks</Package>
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+        <Package Name="com.objectmentor.library.web.utils">
+            <Package>com.objectmentor.library.mocks</Package>
+            <Package>com.objectmentor.library.models</Package>
+            <Package>com.objectmentor.library.libraryRules</Package>
+            <Package>com.objectmentor.library.models</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

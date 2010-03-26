@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <runtime name="WebSphere Application Server v5.1 Express stub"/>
+  <fixed facet="jst.java"/>
+  <fixed facet="jst.web"/>
+  <installed facet="com.ibm.websphere.extended.web" version="5.1"/>
+  <installed facet="jst.web" version="2.3"/>
+  <installed facet="com.ibm.websphere.coexistence.web" version="5.1"/>
+  <installed facet="jst.java" version="1.4"/>
+</faceted-project>

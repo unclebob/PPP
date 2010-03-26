@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servers>
+  <server autoPublishInterval="1" baseServerName="server1" hostname="localhost" id="was.base.v6" isAutoPublishEnabled="true" isHotMethodReplace="true" isRunServerWithWorkspaceResources="true" isUTCEnabled="true" name="WebSphere Application Server v6.0" runtime-id="was.base.v6" server-type="com.ibm.ws.ast.st.v6.server.base" server-type-id="com.ibm.ws.ast.st.v6.server.base" serverConnectionType="RMI" serverOrbBootstrapPortNum="2809" serverSoapConnectorPortNum="8880" timestamp="1" webSphereProfileName="default"/>
+</servers>

@@ -1,0 +1,23 @@
+Notes on the Web Architecture for "Library" and the Exercises
+
+For maximum portability, the only Web-tier toolkits used are
+the Servlet and JSP APIs. Extensions like Struts and JSF were
+not used. Similarly, alternative frameworks like Tapestry were
+not used.
+
+However, the implementation borrows common patterns, like
+"Front Controller", which are usually implemented by toolkits
+like Struts. Similarly, Ruby on Rails concepts like "convention
+over configuration" were used. For example, form post URIs are
+mapped to corresponding Java packages, classes, and methods
+using a naming convention.
+
+Some design choices were made to simplify the structure for
+teaching purposes. For example, security issues, which would be
+important for a publically-accessible application, were ignored.
+
+As much as possible, business logic is in the "application" 
+packages. The web-related packages and JSP pages are kept as
+simple as possible. Among the many advantages, this strategy
+promotes easier testing.
+ 

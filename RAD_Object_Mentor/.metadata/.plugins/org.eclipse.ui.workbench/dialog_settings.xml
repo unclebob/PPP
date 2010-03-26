@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ImportResourcesAction">
+		<item key="WizardListSelectionPage.STORE_SELECTED_WIZARD_ID" value="com.ibm.etools.project.interchange.ProjectInterchangeImport"/>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="585"/>
+		<item key="DIALOG_Y_ORIGIN" value="186"/>
+	</section>
+</section>

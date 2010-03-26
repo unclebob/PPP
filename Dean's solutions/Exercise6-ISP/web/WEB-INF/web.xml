@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="Exercise6-ISP">
+  	<display-name>Object Mentor Library - Exercise6 - ISP</display-name>
+  	<description>
+    	 Object Mentor Library Class Exercises
+  	</description>
+
+  	<servlet>
+    	<servlet-name>controller</servlet-name>
+    		<servlet-class>com.objectmentor.library.web.servlet.ControllerServlet</servlet-class>
+    	<init-param>
+      		<param-name>debug</param-name>
+      		<param-value>0</param-value>
+    	</init-param>
+    	<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>controller</servlet-name>
+	   	<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

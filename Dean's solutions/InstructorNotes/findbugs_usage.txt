@@ -1,0 +1,15 @@
+FindBugs Usage
+
+If you install findbugs, you can generate a report on the projects, or just view the
+"findbugs_report.xml" dump for Library. 
+
+How to run "findbugs" on the exercise code:
+
+1) Install findbugs (http://findbugs.sourceforge.net).
+2) Run the "findbugs" command, which invokes its own GUI.
+3) Using the File menu, open the project file "library.fb".
+4) Click the "find bugs" button to generate a report.
+
+Or, after step #2,
+
+3b) Using the File menu, "load" the bugs file "findbugs_report.xml".

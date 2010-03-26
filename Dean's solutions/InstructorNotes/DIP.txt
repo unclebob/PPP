@@ -1,0 +1,25 @@
+* The current implementations are concrete fakes. We should see an interface
+	appear for each gateway/service with both concrete and mock implementations.
+
+* Record the test time
+	
+* White board a design improvement
+  * IsbnService -> interface
+    * IsbnServiceImplementation
+    * Mock
+  * MediaGateway -> interface
+    * Existing becomes Fake/Mock implementation
+  * Ditto on the PatronGateway
+
+
+Discuss after students complete the exercise
+* Interfaces in ...gateways
+* Fake/Mock implementations in ...mocks
+* The test-specific code should end up in the mocks with no comments necessary.
+* What are the implications of test-specific methods in the mocks on the 
+  tests	themselves:
+		- declare as MockBlah?
+		- downcast?
+	- compare Application class with wiring in tests
+* Note the decrease in test time	
+	

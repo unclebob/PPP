@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Exercise2-SRP" project="Exercise2-SRP" tests="49" started="49" failures="0" errors="2" ignored="0">
+<testsuite name="com.objectmentor.library.BookCatalogTest" time="0.005">
+<testcase name="testAddBookShouldLookUpISBN" classname="com.objectmentor.library.BookCatalogTest" time="0.004"/>
+<testcase name="testAddBookShouldAddBookReturnedByIsbnService" classname="com.objectmentor.library.BookCatalogTest" time="0.001"/>
+<testcase name="testShouldReturnCorrectBookAmongMany" classname="com.objectmentor.library.BookCatalogTest" time="0.0"/>
+<testcase name="testUnfoundISBN" classname="com.objectmentor.library.BookCatalogTest" time="0.0"/>
+<testcase name="testCanFindMoreThanOneBook" classname="com.objectmentor.library.BookCatalogTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsCopyWhenOneCopyOfManyIsBorrowed" classname="com.objectmentor.library.BookCatalogTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.MoneyTest" time="0.0">
+<testcase name="testEqualityShouldPassWithEqualValues" classname="com.objectmentor.library.MoneyTest" time="0.0"/>
+<testcase name="testEqualityShouldFailWithUnequalValues" classname="com.objectmentor.library.MoneyTest" time="0.0"/>
+<testcase name="testEqualityShouldFailOnNull" classname="com.objectmentor.library.MoneyTest" time="0.0"/>
+<testcase name="testEqualityShouldFailOnWrongType" classname="com.objectmentor.library.MoneyTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.LibraryBorrowingTest" time="0.019">
+<testcase name="testCanBorrowBookThatLibraryHas" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testShouldSetCopyToBorrowed" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanNotBorrowBookLibraryDoesNotHave" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanBorrowTwoIfTwoInCatalog" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testSetReturnDateTwoWeeksFromToday" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.019"/>
+<testcase name="testReceiptRemembersBorrowingPatron" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testReceiptRemembersBorrowedCopy" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.mocks.MockDataServicesBookAccessTest" time="0.001">
+<testcase name="testAddCopyShouldCreateUniqueId" classname="com.objectmentor.library.mocks.MockDataServicesBookAccessTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.001">
+<testcase name="testFindCopyShouldReturnNullForUnaddedBooks" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindCopyShouldReturnCopyForCorrectISBN" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testContainsTitleShouldReturnTrueForCorrectISBN" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testContainsTitleShouldReturnFalseForIncorrectISBN" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsNullWhenCopyIsBorrowed" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsCopyWhenCopyIsNotBorrowed" classname="com.objectmentor.library.BookCatalogWithOneCopyTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.models.PatronTest" time="0.001">
+<testcase name="testCreate" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+<testcase name="testFullName" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+<testcase name="testFullNameWithNoMiddleName" classname="com.objectmentor.library.models.PatronTest" time="0.001"/>
+<testcase name="testAddress" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+<testcase name="testAddressWithNoStreet2" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.BookCatalogWhenEmptyTest" time="0.001">
+<testcase name="testShouldBeEmpty" classname="com.objectmentor.library.BookCatalogWhenEmptyTest" time="0.0"/>
+<testcase name="testContainsTitleShouldReturnFalse" classname="com.objectmentor.library.BookCatalogWhenEmptyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyShouldReturnNull" classname="com.objectmentor.library.BookCatalogWhenEmptyTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.utils.DateUtilTest" time="0.003">
+<testcase name="testDateFromString" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+<testcase name="testDaysLateWithNoTimes" classname="com.objectmentor.library.utils.DateUtilTest" time="0.002"/>
+<testcase name="testDaysLateWhenTwoHoursLateCrossingMidnight" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+<testcase name="testDaysLateWhenOneSecondFromTwoDaysLate" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+<testcase name="testDaysLateWhenEarly" classname="com.objectmentor.library.utils.DateUtilTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.LibraryReturnCopyTest" time="0.007">
+<testcase name="testCanReturnOnTimeBookThatWasBorrowed" classname="com.objectmentor.library.LibraryReturnCopyTest" time="0.002"/>
+<testcase name="testShouldSetStatusToUnknownBookOnAttemptToReturnUnknownBook" classname="com.objectmentor.library.LibraryReturnCopyTest" time="0.0"/>
+<testcase name="testShouldSetStatusToUnBorrowedBookOnAttemptToReturnUnBorrowedBook" classname="com.objectmentor.library.LibraryReturnCopyTest" time="0.0"/>
+<testcase name="testShouldHaveFineAndBeLateIfOneDayLate" classname="com.objectmentor.library.LibraryReturnCopyTest" time="0.005">
+<error>java.lang.NullPointerException
+	at java.util.Calendar.setTime(Calendar.java:1032)
+	at com.objectmentor.library.utils.DateUtil.getMilliseconds(DateUtil.java:15)
+	at com.objectmentor.library.utils.DateUtil.daysLate(DateUtil.java:10)
+	at com.objectmentor.library.Library.calculateFine(Library.java:75)
+	at com.objectmentor.library.Library.returnCopy(Library.java:63)
+	at com.objectmentor.library.LibraryReturnCopyTest.testShouldHaveFineAndBeLateIfOneDayLate(LibraryReturnCopyTest.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:130)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)
+
+</error>
+</testcase>
+<testcase name="testShouldHaveFineAndBeLateIfTwoDaysLate" classname="com.objectmentor.library.LibraryReturnCopyTest" time="0.0">
+<error>java.lang.NullPointerException
+	at java.util.Calendar.setTime(Calendar.java:1032)
+	at com.objectmentor.library.utils.DateUtil.getMilliseconds(DateUtil.java:15)
+	at com.objectmentor.library.utils.DateUtil.daysLate(DateUtil.java:10)
+	at com.objectmentor.library.Library.calculateFine(Library.java:75)
+	at com.objectmentor.library.Library.returnCopy(Library.java:63)
+	at com.objectmentor.library.LibraryReturnCopyTest.testShouldHaveFineAndBeLateIfTwoDaysLate(LibraryReturnCopyTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at junit.framework.TestCase.runTest(TestCase.java:168)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:232)
+	at junit.framework.TestSuite.run(TestSuite.java:227)
+	at org.eclipse.jdt.internal.junit.runner.junit3.JUnit3TestReference.run(JUnit3TestReference.java:130)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:673)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:386)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:196)
+
+</error>
+</testcase>
+</testsuite>
+<testsuite name="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.001">
+<testcase name="testCreate" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.001"/>
+<testcase name="testAddOne" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+<testcase name="testAddAFew" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+<testcase name="testRetrieveNonexistant" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.PrinterUsageTest" time="0.002">
+<testcase name="testNothingProcessed" classname="com.objectmentor.library.PrinterUsageTest" time="0.001"/>
+<testcase name="testOneRecordProcessed" classname="com.objectmentor.library.PrinterUsageTest" time="0.001"/>
+<testcase name="testAcoupleRecordsProcessed" classname="com.objectmentor.library.PrinterUsageTest" time="0.0"/>
+</testsuite>
+</testrun>

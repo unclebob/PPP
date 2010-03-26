@@ -1,0 +1,301 @@
+package com.objectmentor.library.web.framework.mocks;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+import java.security.Principal;
+import java.util.*;
+
+public class MockHttpServletRequest implements HttpServletRequest {
+
+  private String method;
+  private String contextPath;
+  private String requestURI;
+  private HttpSession session = new MockHttpSession();
+  private Map parameters = new HashMap();
+  private Map attributes = new HashMap();
+
+  public MockHttpServletRequest(String method, String contextPath,
+                                String requestURI) {
+    super();
+    this.method = method;
+    this.contextPath = contextPath;
+    this.requestURI = requestURI;
+  }
+
+  public MockHttpServletRequest() {
+    this("GET");
+  }
+
+  public MockHttpServletRequest(String method) {
+    this(method, "/Library", "/Library/foo/bar.jsp");
+  }
+
+  public String getAuthType() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getContextPath() {
+    return contextPath;
+  }
+
+  public Cookie[] getCookies() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public long getDateHeader(String arg0) {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public String getHeader(String arg0) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public Enumeration getHeaderNames() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public Enumeration getHeaders(String arg0) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getIntHeader(String arg0) {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public String getMethod() {
+    return method;
+  }
+
+  public String getPathInfo() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getPathTranslated() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getQueryString() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRemoteUser() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRequestURI() {
+    return requestURI;
+  }
+
+  public StringBuffer getRequestURL() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRequestedSessionId() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getServletPath() {
+    return requestURI.substring(getContextPath().length());
+  }
+
+  public HttpSession getSession() {
+    return session;
+  }
+
+  public HttpSession getSession(boolean arg0) {
+    return session;
+  }
+
+  public Principal getUserPrincipal() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public boolean isRequestedSessionIdFromCookie() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public boolean isRequestedSessionIdFromURL() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public boolean isRequestedSessionIdFromUrl() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public boolean isRequestedSessionIdValid() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public boolean isUserInRole(String arg0) {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public Object getAttribute(String arg0) {
+    return attributes.get(arg0);
+  }
+
+  public Enumeration getAttributeNames() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getCharacterEncoding() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getContentLength() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public String getContentType() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public ServletInputStream getInputStream() throws IOException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getLocalAddr() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getLocalName() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getLocalPort() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public Locale getLocale() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public Enumeration getLocales() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getParameter(String arg0) {
+    return (String) parameters.get(arg0);
+  }
+
+  public Map getParameterMap() {
+    return parameters;
+  }
+
+  public Enumeration getParameterNames() {
+    return null;
+  }
+
+  public String[] getParameterValues(String arg0) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getProtocol() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public BufferedReader getReader() throws IOException {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRealPath(String arg0) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRemoteAddr() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getRemoteHost() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getRemotePort() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public RequestDispatcher getRequestDispatcher(String arg0) {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getScheme() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public String getServerName() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  public int getServerPort() {
+    // TODO Auto-generated method stub
+    return 0;
+  }
+
+  public boolean isSecure() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  public void removeAttribute(String arg0) {
+    // TODO Auto-generated method stub
+
+  }
+
+  public void setCharacterEncoding(String arg0)
+    throws UnsupportedEncodingException {
+    // TODO Auto-generated method stub
+
+  }
+
+  public void setSession(HttpSession session) {
+    this.session = session;
+  }
+
+  public void setParameter(String s, String s1) {
+    parameters.put(s, s1);
+  }
+
+  public void setAttribute(String name, Object value) {
+    attributes.put(name, value);
+  }
+}

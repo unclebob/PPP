@@ -1,0 +1,765 @@
+!SESSION Apr 24, 2007 08:52:12.921 ---------------------------------------------
+eclipse.buildId=I200406192000
+java.fullversion=J2RE 1.4.2 IBM J9 2.2 Windows 2000 x86-32 j9n142-20050609 (JIT enabled)
+J9VM - 20050524_1738_lHdSMR
+JIT  - r7_level20050518_1803
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments: -plugincustomization C:\Program Files\IBM\Rational\SDP\6.0\eclipse\default\plugin_customization.ini
+
+!ENTRY org.eclipse.ui 4 4 Apr 24, 2007 08:52:12.921
+!MESSAGE Invalid Menu Extension (Path is invalid): com.businessobjects.integration.eclipse.crdesigner
+
+!ENTRY com.ibm.ws.rapiddeploy.core 2 2 Apr 24, 2007 08:52:32.968
+!MESSAGE ADMC0017E: Could not create an RMI connector to connect to host localhost at port 2809
+
+!ENTRY com.ibm.ws.rapiddeploy.websphere 4 4 Apr 24, 2007 08:52:33.531
+!MESSAGE Publish completed with errors and/or warnings. Please see server logs for more details.
+!SUBENTRY 1 com.ibm.ws.rapiddeploy.websphere 0 0 Apr 24, 2007 08:52:33.531
+!MESSAGE Publishing Library_EAR to WebSphere Application Server v6.0
+!SUBENTRY 1 com.ibm.ws.rapiddeploy.websphere 4 4 Apr 24, 2007 08:52:33.531
+!MESSAGE Failed to make connection to WebSphere Application Server.
+!SESSION Apr 24, 2007 11:03:49.15 ----------------------------------------------
+eclipse.buildId=I200406192000
+java.fullversion=J2RE 1.4.2 IBM J9 2.2 Windows 2000 x86-32 j9n142-20050609 (JIT enabled)
+J9VM - 20050524_1738_lHdSMR
+JIT  - r7_level20050518_1803
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments: -plugincustomization C:\Program Files\IBM\Rational\SDP\6.0\eclipse\default\plugin_customization.ini
+
+!ENTRY com.ibm.ws.rapiddeploy.core 2 2 Apr 24, 2007 11:03:49.15
+!MESSAGE ADMC0017E: Could not create an RMI connector to connect to host localhost at port 2809
+
+!ENTRY com.ibm.ws.rapiddeploy.websphere 4 4 Apr 24, 2007 11:03:49.265
+!MESSAGE Publish completed with errors and/or warnings. Please see server logs for more details.
+!SUBENTRY 1 com.ibm.ws.rapiddeploy.websphere 0 0 Apr 24, 2007 11:03:49.265
+!MESSAGE Publishing Library_EAR to WebSphere Application Server v6.0
+!SUBENTRY 1 com.ibm.ws.rapiddeploy.websphere 4 4 Apr 24, 2007 11:03:49.265
+!MESSAGE Failed to make connection to WebSphere Application Server.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.15
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.31
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.31
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.46
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.46
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.46
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.46
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.78
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.78
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.78
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.78
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.78
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.93
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.109
+!MESSAGE Marker id: 1946 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 Apr 24, 2007 11:23:44.109
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 Apr 24, 2007 11:23:44.109
+!MESSAGE Marker id: 1946 not found.
+!SESSION May 03, 2007 12:18:02.88 ----------------------------------------------
+eclipse.buildId=I200406192000
+java.fullversion=J2RE 1.4.2 IBM J9 2.2 Windows XP x86-32 j9n142ifx-20041102 (JIT enabled)
+J9VM - 20040916_0908_lHdSMR
+JIT  - r7_level20040915_1801
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments: -plugincustomization c:\program files\Rational Software\RAD6.0\eclipse\default\plugin_customization.ini
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.88
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.104
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.104
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.104
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.104
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.119
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.119
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.119
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.119
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.135
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.135
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.135
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.135
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.135
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.135
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.135
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.151
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.151
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.151
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.151
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.182
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.182
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.182
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.182
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.197
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.197
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.197
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.213
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.213
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.213
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.229
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.229
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.229
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.229
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.229
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:02.229
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:02.244
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.25
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.25
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.41
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.41
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.41
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.41
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.41
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.41
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.56
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.56
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.56
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.72
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.88
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.88
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.88
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.88
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.88
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.88
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.103
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.103
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.556
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.556
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.556
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.556
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.556
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.556
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.556
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.572
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.572
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.572
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.572
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.572
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.572
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.588
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.588
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.588
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.588
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.588
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:11.603
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:11.603
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.119
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.134
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.134
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.134
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.134
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.197
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.197
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.197
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.322
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.322
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.322
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.337
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.337
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.337
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.337
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.353
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.353
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.353
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.353
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.353
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.369
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.369
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.369
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.369
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.369
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.384
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.384
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.384
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.400
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.400
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.400
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.416
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.416
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.416
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.416
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.416
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY org.eclipse.ui.ide 4 4 May 03, 2007 12:18:14.431
+!MESSAGE Error accessing marker type
+
+!ENTRY org.eclipse.core.resources 4 376 May 03, 2007 12:18:14.431
+!MESSAGE Marker id: 1053 not found.
+
+!ENTRY com.ibm.wtp.server.ui 4 0 May 03, 2007 12:21:22.968
+!MESSAGE Cannot connect to the server process. Make sure the server is already started.
+
+!ENTRY org.eclipse.jdt.junit 4 101 May 03, 2007 12:29:00.445
+!MESSAGE No tests found
+
+!ENTRY org.eclipse.jdt.junit 4 101 May 03, 2007 12:29:10.304
+!MESSAGE No tests found
+
+!ENTRY org.eclipse.core.runtime 4 2 May 03, 2007 12:42:01.93
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.runtime".
+!STACK 0
+java.lang.ClassCastException: org/eclipse/ui/internal/EditorActionBars incompatible with org/eclipse/ui/internal/ViewActionBars
+	at org.eclipse.ui.internal.ViewFactory.destroyView(Unknown Source)
+	at org.eclipse.ui.internal.ViewFactory.releaseView(Unknown Source)
+	at org.eclipse.ui.internal.Perspective.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchPage.dispose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.closeAllPages(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(Unknown Source)
+	at org.eclipse.jface.window.WindowManager.close(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$10.run(Unknown Source)
+	at org.eclipse.core.internal.runtime.InternalPlatform.run(Unknown Source)
+	at org.eclipse.core.runtime.Platform.run(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.busyClose(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$8(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$12.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.close(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.close(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow$1.run(Unknown Source)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(Unknown Source)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(Unknown Source)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Unknown Source)
+	at org.eclipse.jface.window.Window$2.shellClosed(Unknown Source)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Control.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Unknown Source)
+	at org.eclipse.swt.widgets.Display.windowProc(Unknown Source)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(Unknown Source)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:273)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:58)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:60)
+	at java.lang.reflect.Method.invoke(Method.java:391)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:185)
+	at org.eclipse.core.launcher.Main.run(Main.java:704)
+	at org.eclipse.core.launcher.Main.main(Main.java:688)
+!SESSION 2008-07-09 12:07:44.621 -----------------------------------------------
+eclipse.buildId=I20080609-1311
+java.version=1.5.0_13
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/schuchert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -keyring /Users/schuchert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.resources 1 0 2008-07-09 12:08:28.370
+!MESSAGE Conversion of persistent properties completed successfully.
+
+!ENTRY org.eclipse.ui 4 0 2008-07-09 12:08:31.440
+!MESSAGE Unable to create editor ID com.ibm.etools.web.ui.presentation.WebEditor: No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+!STACK 1
+org.eclipse.ui.PartInitException: No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:598)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:428)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:594)
+	at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:263)
+	at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1410)
+	at org.eclipse.ui.internal.EditorManager$5.runWithException(EditorManager.java:944)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$27.runWithException(Workbench.java:1361)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2293)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+!SUBENTRY 1 org.eclipse.ui 4 0 2008-07-09 12:08:31.450
+!MESSAGE No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+
+!ENTRY org.eclipse.ui 4 0 2008-07-09 12:08:31.751
+!MESSAGE Unable to create editor ID com.ibm.etools.web.ui.presentation.WebEditor: No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+!STACK 1
+org.eclipse.ui.PartInitException: No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:598)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:428)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:594)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:306)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1256)
+	at org.eclipse.ui.internal.PartStack.handleDeferredEvents(PartStack.java:1224)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.PartSashContainer.handleDeferredEvents(PartSashContainer.java:1401)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1383)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1373)
+	at org.eclipse.ui.internal.WorkbenchPage.access$14(WorkbenchPage.java:1364)
+	at org.eclipse.ui.internal.WorkbenchPage$15.runWithException(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$27.runWithException(Workbench.java:1361)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2293)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+!SUBENTRY 1 org.eclipse.ui 4 0 2008-07-09 12:08:31.752
+!MESSAGE No editor descriptor for id com.ibm.etools.web.ui.presentation.WebEditor
+
+!ENTRY org.eclipse.ui.workbench 4 2 2008-07-09 12:08:31.776
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:86)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:74)
+	at org.eclipse.ui.internal.EditorSite.<init>(EditorSite.java:46)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:464)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:594)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:306)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1256)
+	at org.eclipse.ui.internal.PartStack.handleDeferredEvents(PartStack.java:1224)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.PartSashContainer.handleDeferredEvents(PartSashContainer.java:1401)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1383)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1373)
+	at org.eclipse.ui.internal.WorkbenchPage.access$14(WorkbenchPage.java:1364)
+	at org.eclipse.ui.internal.WorkbenchPage$15.runWithException(WorkbenchPage.java:3261)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:803)
+	at org.eclipse.ui.internal.Workbench$27.runWithException(Workbench.java:1361)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:31)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3338)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3067)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2293)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)
+
+!ENTRY org.eclipse.core.resources 1 0 2008-07-09 12:08:46.600
+!MESSAGE Conversion of local history completed successfully.
+!SESSION 2008-07-09 12:48:42.084 -----------------------------------------------
+eclipse.buildId=I20080609-1311
+java.version=1.5.0_13
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/schuchert/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -keyring /Users/schuchert/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.ui.workbench 4 2 2008-07-09 16:17:56.740
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.NullPointerException: Cannot set a null prefix table
+	at org.eclipse.jface.bindings.CachedBindingSet.setPrefixTable(CachedBindingSet.java:346)
+	at org.eclipse.jface.bindings.BindingManager.recomputeBindings(BindingManager.java:1765)
+	at org.eclipse.jface.bindings.BindingManager.contextManagerChanged(BindingManager.java:689)
+	at org.eclipse.core.commands.contexts.ContextManager.fireContextManagerChanged(ContextManager.java:152)
+	at org.eclipse.core.commands.contexts.ContextManager.removeActiveContext(ContextManager.java:232)
+	at org.eclipse.ui.internal.contexts.ContextAuthority.updateContext(ContextAuthority.java:767)
+	at org.eclipse.ui.internal.contexts.ContextAuthority.deactivateContext(ContextAuthority.java:362)
+	at org.eclipse.ui.internal.contexts.ContextService.deactivateContext(ContextService.java:140)
+	at org.eclipse.ui.internal.contexts.ContextService.deactivateContexts(ContextService.java:154)
+	at org.eclipse.ui.internal.contexts.SlaveContextService.dispose(SlaveContextService.java:240)
+	at org.eclipse.ui.internal.services.ServiceLocator.dispose(ServiceLocator.java:142)
+	at org.eclipse.ui.internal.WorkbenchWindow.hardClose(WorkbenchWindow.java:1626)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:722)
+	at org.eclipse.ui.internal.WorkbenchWindow.access$0(WorkbenchWindow.java:698)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.run(WorkbenchWindow.java:814)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:812)
+	at org.eclipse.jface.window.WindowManager.close(WindowManager.java:109)
+	at org.eclipse.ui.internal.Workbench$16.run(Workbench.java:912)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:909)
+	at org.eclipse.ui.internal.Workbench.access$15(Workbench.java:838)
+	at org.eclipse.ui.internal.Workbench$23.run(Workbench.java:1082)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1080)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1052)
+	at org.eclipse.ui.internal.Workbench$56.handleEvent(Workbench.java:2253)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:3582)
+	at org.eclipse.swt.widgets.Display.coreEventProc(Display.java:869)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3047)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2382)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2346)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2198)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:493)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:288)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:488)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:193)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:382)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:549)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:504)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1236)

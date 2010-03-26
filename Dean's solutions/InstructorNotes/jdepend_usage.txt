@@ -1,0 +1,25 @@
+JDepend Usage
+
+The final Library project and Exercises 8 and 9 all contain "jdepend_report.png" images
+and corresponding "*.xml" (raw data) and "*.dot" (input for the GraphViz "dot" program)
+files used to create the image. All these files were generated using the "Library/jdepend.sh"
+script. To regenerate them, run the following bash shell commands:
+
+	in Library:		            ./jdepend.sh
+	in Exercise8-Packaging:		../../Library/jdepend.sh
+	in Exercise9-Coupling:		../../Library/jdepend.sh
+	
+Note that the script requires GraphViz to be installed, for the "dot" program,
+xsltproc, to convert the output XML to the "dot" format, and of course JDepend. If any
+of these is not available, an appropriate warning is printed.
+
+I ran the script on Linux, but it should also work on OS X. I did notice one problem on Linux; 
+at the end of the run, it attempts to open the PNG file using the "eog" image viewer. For some
+reason, nothing happens. You can run the same command just fine in a bash shell. (The script
+uses Preview on OS X...)
+
+Older copies of the output files are moved to a "jdepend.bak" directory and a time stamp
+is added to their names.
+
+If you look at the Library/jdepend_report.png", you will notice there is one cyclic
+dependency in the package graph.

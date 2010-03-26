@@ -1,0 +1,137 @@
+
+digraph g {
+        graph [
+	    rankdir = "LR"
+	];
+	node [
+	    fontsize = "12"
+	    fontname = "Courier"
+	    shape = "ellipse"
+	];
+	edge[];
+	"com.objectmentor" [
+        label="com.objectmentor | Total Classes: "
+	shape="record"
+	color=".99 0.0 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.application" [
+        label="com.objectmentor.library.application | Total Classes: 4"
+	shape="record"
+	color=".99 0.44 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.application" -> "com.objectmentor.library.gateways"
+    "com.objectmentor.library.application" -> "com.objectmentor.library.libraryRules"
+    "com.objectmentor.library.application" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.application" -> "com.objectmentor.library.services"
+    "com.objectmentor.library.application" -> "com.objectmentor.library.web.controller"
+    "com.objectmentor.library.gateways" [
+        label="com.objectmentor.library.gateways | Total Classes: 9"
+	shape="record"
+	color=".99 0.28 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.gateways" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.libraryRules" [
+        label="com.objectmentor.library.libraryRules | Total Classes: 6"
+	shape="record"
+	color=".99 0.17 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.libraryRules" -> "com.objectmentor.library.application"
+    "com.objectmentor.library.libraryRules" -> "com.objectmentor.library.gateways"
+    "com.objectmentor.library.libraryRules" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.libraryRules" -> "com.objectmentor.library.utils"
+    "com.objectmentor.library.mocks" [
+        label="com.objectmentor.library.mocks | Total Classes: 11"
+	shape="record"
+	color=".99 0.25 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.mocks" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.mocks" -> "com.objectmentor.library.offline"
+    "com.objectmentor.library.mocks" -> "com.objectmentor.library.services"
+    "com.objectmentor.library.models" [
+        label="com.objectmentor.library.models | Total Classes: 9"
+	shape="record"
+	color=".99 0.71 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.models" -> "com.objectmentor.library.libraryRules"
+    "com.objectmentor.library.models" -> "com.objectmentor.library.utils"
+    "com.objectmentor.library.offline" [
+        label="com.objectmentor.library.offline | Total Classes: 6"
+	shape="record"
+	color=".99 0.4 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.offline" -> "com.objectmentor.library.gateways"
+    "com.objectmentor.library.offline" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.offline" -> "com.objectmentor.library.services"
+    "com.objectmentor.library.online" [
+        label="com.objectmentor.library.online | Total Classes: 1"
+	shape="record"
+	color=".99 0.33 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.online" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.online" -> "com.objectmentor.library.services"
+    "com.objectmentor.library.services" [
+        label="com.objectmentor.library.services | Total Classes: 3"
+	shape="record"
+	color=".99 0.17 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.services" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.utils" [
+        label="com.objectmentor.library.utils | Total Classes: 6"
+	shape="record"
+	color=".99 0.83 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.web.controller" [
+        label="com.objectmentor.library.web.controller | Total Classes: 14"
+	shape="record"
+	color=".99 0.02 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.application"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.gateways"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.libraryRules"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.mocks"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.offline"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.online"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.services"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.utils"
+    "com.objectmentor.library.web.controller" -> "com.objectmentor.library.web.framework"
+    "com.objectmentor.library.web.controller.patrons" [
+        label="com.objectmentor.library.web.controller.patrons | Total Classes: 2"
+	shape="record"
+	color=".99 0 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.application"
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.gateways"
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.libraryRules"
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.models"
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.utils"
+    "com.objectmentor.library.web.controller.patrons" -> "com.objectmentor.library.web.controller"
+    "com.objectmentor.library.web.framework" [
+        label="com.objectmentor.library.web.framework | Total Classes: 4"
+	shape="record"
+	color=".99 0 .9"
+	style=filled
+    ];
+    "com.objectmentor.library.web.framework" -> "com.objectmentor.library.application"
+    "com.objectmentor.library.web.framework" -> "com.objectmentor.library.utils"
+    "com.objectmentor.library.web.framework" -> "com.objectmentor.library.web.controller"
+    "com.objectmentor.library.web.tags" [
+        label="com.objectmentor.library.web.tags | Total Classes: 1"
+	shape="record"
+	color=".99 1 .9"
+	style=filled
+    ];
+    
+}

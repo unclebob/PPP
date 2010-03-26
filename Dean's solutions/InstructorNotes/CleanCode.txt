@@ -1,0 +1,18 @@
+The code in this exercise is full of long methods, ugly names,
+and ugly comments.
+
+ * Catalog has strange names like find2, findList, etc.
+   It also has lots of empty Javadoc comments.
+   * One solution is to fix the names and the comments
+   * Another is to fix the names and delete the comments
+
+ * CatalogTest is one giant test function that should be split up.
+   * See SRP for the BookCatalogTest as a solution
+    * note the name change, test partitioning, and documentation
+      value of the tests
+
+ * MockDataServices and it's interface DataServices also have short
+   and inappropriate method and parameter names.
+
+ * Library has version control comments as well as inappropriate 
+   method and parameter names.

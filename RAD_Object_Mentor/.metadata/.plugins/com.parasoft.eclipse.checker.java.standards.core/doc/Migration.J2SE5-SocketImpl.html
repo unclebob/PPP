@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE>
+New abstract methods added to SocketImpl
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+New abstract methods added to SocketImpl [Migration.J2SE5-SocketImpl-3]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+As of 1.4 the Socket API added a abstract methods to the
+SocketImpl abstract class. Because of the new method,
+a subclass of SocketImpl created prior to 1.4 fails to
+compile because there is no implementation for the new 
+methods. See
+<A href="http://java.sun.com/j2se/JM_White_Paper_R6A.pdf">http://java.sun.com/j2se/JM_White_Paper_R6A.pdf</A>
+
+</PRE>
+</BODY>
+</HTML>

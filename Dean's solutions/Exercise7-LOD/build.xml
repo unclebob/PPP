@@ -1,0 +1,107 @@
+<project name="Library" default="compile" basedir=".">
+
+  <property file="build.properties"/>
+  <property file="${user.home}/build.properties"/>
+  <property environment="env" />
+  <property name="app.name" value="Exercise7-LOD"/>
+  <property name="app.path" value="/${app.name}"/>
+  <property name="app.version" value="0.1-dev"/>
+  <property name="build.home" value="${basedir}/build"/>
+  <property name="catalina.home" value="${env.CATALINA_HOME}"/>
+  <property name="dist.home" value="${basedir}/dist"/>
+  <property name="web.home" value="${basedir}/web"/>
+  <property name="docs.home" value="${basedir}/docs"/>
+  <property name="manager.url" value="http://localhost:8080/manager"/>
+  <property name="src.home" value="${basedir}/src"/>
+  <property name="web.home" value="${basedir}/web"/>
+
+  <taskdef name="install" classname="org.apache.catalina.ant.InstallTask"/>
+  <taskdef name="list" classname="org.apache.catalina.ant.ListTask"/>
+  <taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask"/>
+  <taskdef name="remove" classname="org.apache.catalina.ant.RemoveTask"/>
+
+  <property name="compile.debug" value="true"/>
+  <property name="compile.deprecation" value="false"/>
+  <property name="compile.optimize" value="true"/>
+  <path id="compile.classpath">
+    <fileset dir="lib">
+      <include name="*.jar"/>
+    </fileset>
+    <pathelement location="${catalina.home}/common/classes"/>
+    <fileset dir="${catalina.home}/common/endorsed">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir="${catalina.home}/common/lib">
+      <include name="*.jar"/>
+    </fileset>
+    <pathelement location="${catalina.home}/shared/classes"/>
+    <fileset dir="${catalina.home}/shared/lib">
+      <include name="*.jar"/>
+    </fileset>
+
+  </path>
+
+  <target name="all" depends="clean,compile,dist,remove,install" description="Clean build and dist directories, then compile"/>
+  <target name="clean" description="Delete old build and dist directories">
+    <delete dir="${build.home}"/>
+    <delete dir="${dist.home}"/>
+  </target>
+
+  <target name="compile" depends="prepare" description="Compile Java sources">
+
+    <mkdir dir="${build.home}/WEB-INF/classes"/>
+    <javac srcdir="${src.home}" destdir="${build.home}/WEB-INF/classes" debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}">
+        <classpath refid="compile.classpath"/>
+    </javac>
+
+    <copy todir="${build.home}/WEB-INF/classes">
+      <fileset dir="${src.home}" excludes="**/*.java"/>
+    </copy>
+  	
+    <copy todir="${build.home}/WEB-INF/lib">
+      <fileset dir="${web.home}/WEB-INF/lib"/>
+    </copy>
+  </target>
+
+  <target name="dist" depends="compile" description="Create binary distribution">
+  	<mkdir dir="${dist.home}" />
+    <jar jarfile="${dist.home}/${app.name}.war" basedir="${build.home}"/>
+  </target>
+
+  <target name="install" depends="compile" description="Install application to servlet container">
+    <install url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}" war="file://${build.home}"/>
+  </target>
+
+	<target name="docs" depends="javadoc"/>
+	<target name="javadocs" depends="javadoc"/>
+
+	<target name="javadoc" depends="compile" description="Create Javadoc API documentation">
+    <mkdir dir="${docs.home}/api"/>
+    <javadoc sourcepath="${src.home}" destdir="${docs.home}/api" packagenames="*">
+      <classpath refid="compile.classpath"/>
+    </javadoc>
+  </target>
+
+  <target name="list" description="List installed applications on servlet container">
+    <list url="${manager.url}" username="${manager.username}" password="${manager.password}"/>
+  </target>
+
+  <target name="prepare">
+    <!-- Create build directories as needed -->
+    <mkdir dir="${build.home}"/>
+    <mkdir dir="${build.home}/WEB-INF"/>
+    <mkdir dir="${build.home}/WEB-INF/classes"/>
+    <copy todir="${build.home}">
+      <fileset dir="${web.home}"/>
+    </copy>
+    <mkdir dir="${build.home}/WEB-INF/lib"/>
+  </target>
+
+  <target name="reload" depends="compile" description="Reload application on servlet container">
+    <reload url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}"/>
+  </target>
+  <target name="remove" description="Remove application on servlet container">
+    <remove url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}"/>
+  </target>
+
+</project>

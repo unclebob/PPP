@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<TITLE>
+Specify an initial 'StringBuffer' capacity
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+Specify an initial 'StringBuffer' capacity [OPT.SB2-3]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+
+This rule identifies code where 'StringBuffer' is not instantiated with an initial
+size specified. An error is reported for each occurrence.
+
+</PRE>
+<STRONG>
+BENEFITS
+</STRONG>
+<PRE>
+
+The 'StringBuffer' constructor will create a character array of a default size,
+typically 16.  If 'StringBuffer' exceeds its capacity, 'StringBuffer' must 
+allocate a new character array with a larger capacity, copy the old contents
+into the new array, and eventually discard the old array.  In many situations, 
+you can determine the 'StringBuffer' size in advance.  In that 
+case, reserve enough capacity during construction and prevent the 'StringBuffer'
+from ever needing expansion.
+
+</PRE>
+<STRONG>
+SINCE
+</STRONG>
+<PRE>
+
+v4.5
+
+</PRE>
+<STRONG>
+EXAMPLE
+</STRONG>
+<PRE>
+
+package examples.rules.opt;
+
+public class SB {
+    void method () {
+        StringBuffer buffer = new StringBuffer();  // VIOLATION
+        buffer.append ("hello");
+    }
+}
+
+</PRE>
+<STRONG>
+REPAIR
+</STRONG>
+<PRE>
+
+Provide an initial capacity for the 'StringBuffer'.
+
+package examples.rules.opt;
+
+public class SBFixed {
+    void method () {
+        StringBuffer buffer = new StringBuffer(SBSIZE);  // FIXED
+        buffer.append ("hello");
+    }
+    private final int SBSIZE = 100;
+}
+
+</PRE>
+<STRONG>
+REFERENCES
+</STRONG>
+<PRE>
+
+Dov Bulka, "Java Performance and Scalability Volume 1: Server-Side Programming 
+Techniques" Addison Wesley, ISBN: 0-201-70429-3 p.30 - 31
+
+</PRE>
+</BODY>
+</HTML>

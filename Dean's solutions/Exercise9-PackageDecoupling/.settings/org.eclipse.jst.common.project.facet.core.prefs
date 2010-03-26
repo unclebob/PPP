@@ -1,0 +1,4 @@
+#Mon Dec 18 10:52:20 CST 2006
+classpath.helper/org.eclipse.jdt.launching.JRE_CONTAINER\:\:org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType\:\:WebSphere\ v5.1\ Express\ JRE/owners=jst.java\:1.4
+classpath.helper/org.eclipse.jst.server.core.container\:\:com.ibm.ws.ast.st.runtime.runtimeTarget\:\:was.express.v51/owners=jst.web\:2.3
+eclipse.preferences.version=1

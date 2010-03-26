@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<TITLE>
+Use StringBuilder if thread safe
+</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+<STRONG>
+Use StringBuilder if thread safe [Migration.J2SE-StringBuilder-4]
+</STRONG>
+<BR><BR>
+<STRONG>
+DESCRIPTION
+</STRONG>
+<PRE>
+StringBuilder is designed for use as a drop-in replacement
+for StringBuffer in places where the string buffer was
+being used by a single thread (as is generally the case).
+Where possible, it is recommended that StringBuilderbe used
+in preference to StringBuffer as it will be faster under
+most implementations. See
+<A href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/StringBuilder.html">http://java.sun.com/j2se/1.5.0/docs/api/java/lang/StringBuilder.html</A>
+
+</PRE>
+</BODY>
+</HTML>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="Exercise7-LOD">
+  	<display-name>Object Mentor Library</display-name>
+  	<description>
+    	 Object Mentor Library Class Exercises
+  	</description>
+
+  	<servlet>
+    	<servlet-name>controller</servlet-name>
+    		<servlet-class>com.objectmentor.library.web.servlet.ControllerServlet</servlet-class>
+    	<init-param>
+      		<param-name>debug</param-name>
+      		<param-value>0</param-value>
+    	</init-param>
+    	<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+    	<servlet-name>controller</servlet-name>
+	   	<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<!--
+	<taglib>
+		<taglib-uri>http://jakarta.apache.org/taglibs/datetime-1.0</taglib-uri>
+		<taglib-location>/WEB-INF/lib/taglibs-datetime.jar</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>http://jakarta.apache.org/taglibs/string-1.0.1</taglib-uri>
+		<taglib-location>/WEB-INF/lib/taglibs-string.jar</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>http://jakarta.apache.org/taglibs/utility</taglib-uri>
+		<taglib-location>/WEB-INF/lib/utility.jar</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>http://jakarta.apache.org/taglibs/mailer-1.1</taglib-uri>
+		<taglib-location>/WEB-INF/lib/taglibs-mailer.jar</taglib-location>
+	</taglib>
+	-->
+</web-app>
+

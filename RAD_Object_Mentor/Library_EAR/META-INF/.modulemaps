@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modulemap:EARProjectMap xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:application="application.xmi" xmlns:modulemap="modulemap.xmi" xmi:id="EARProjectMap_1172505731218">
+  <mappings xmi:id="ModuleMapping_1172505731218" projectName="Library">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172505731218"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172511661609" projectName="Exercise3-DIP">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172511661609"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512654171" projectName="Exercise4-OCP">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512654171"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512671109" projectName="Exercise5-LSP">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512671109"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512812031" projectName="Exercise6-ISP">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512812031"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512909687" projectName="Exercise7-LOD">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512909687"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512947281" projectName="Exercise8-Packaging">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512947281"/>
+  </mappings>
+  <mappings xmi:id="ModuleMapping_1172512963062" projectName="Exercise9-PackageDecoupling">
+    <module xmi:type="application:WebModule" href="META-INF/application.xml#WebModule_1172512963062"/>
+  </mappings>
+</modulemap:EARProjectMap>

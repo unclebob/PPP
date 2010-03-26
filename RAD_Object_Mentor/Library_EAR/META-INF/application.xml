@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+	<display-name>
+	Library_EAR</display-name>
+	<module id="WebModule_1172505731218">
+		<web>
+			<web-uri>Library.war</web-uri>
+			<context-root>Library</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172511661609">
+		<web>
+			<web-uri>Exercise3-DIP.war</web-uri>
+			<context-root>Exercise3-DIP</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512654171">
+		<web>
+			<web-uri>Exercise4-OCP.war</web-uri>
+			<context-root>Exercise4-OCP</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512671109">
+		<web>
+			<web-uri>Exercise5-LSP.war</web-uri>
+			<context-root>Exercise5-LSP</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512812031">
+		<web>
+			<web-uri>Exercise6-ISP.war</web-uri>
+			<context-root>Exercise6-ISP</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512909687">
+		<web>
+			<web-uri>Exercise7-LOD.war</web-uri>
+			<context-root>Exercise7-LOD</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512947281">
+		<web>
+			<web-uri>Exercise8-Packaging.war</web-uri>
+			<context-root>Exercise8-Packaging</context-root>
+		</web>
+	</module>
+	<module id="WebModule_1172512963062">
+		<web>
+			<web-uri>Exercise9-PackageDecoupling.war</web-uri>
+			<context-root>Exercise9-PackageDecoupling</context-root>
+		</web>
+	</module>
+</application>

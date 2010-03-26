@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Exercise4-OCP" project="Exercise4-OCP" tests="122" started="122" failures="0" errors="0" ignored="0">
+<testsuite name="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.009">
+<testcase name="testCreate" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.001"/>
+<testcase name="testAddOne" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.007"/>
+<testcase name="testAddAFew" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.0"/>
+<testcase name="testModify" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.001"/>
+<testcase name="testDeleteAFew" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.0"/>
+<testcase name="testRetrieveNonexistant" classname="com.objectmentor.library.mocks.MockPatronGatewayTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryCDTest" time="0.016">
+<testcase name="testAcceptCd" classname="com.objectmentor.library.libraryRules.LibraryCDTest" time="0.01"/>
+<testcase name="testReturnDateIsFiveDaysFromToday" classname="com.objectmentor.library.libraryRules.LibraryCDTest" time="0.003"/>
+<testcase name="testFineIfReturnedOneDayLate" classname="com.objectmentor.library.libraryRules.LibraryCDTest" time="0.002"/>
+<testcase name="testChargeForDamage" classname="com.objectmentor.library.libraryRules.LibraryCDTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.PatronsController_DeletedPatronTest" time="0.018">
+<testcase name="testDeletePatronSucceedsWithValidId" classname="com.objectmentor.library.web.controller.PatronsController_DeletedPatronTest" time="0.014"/>
+<testcase name="testDeletePatronDoesNothingWithInvalidId" classname="com.objectmentor.library.web.controller.PatronsController_DeletedPatronTest" time="0.004"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.servlet.ControllerServletTest" time="0.011">
+<testcase name="testDoGet" classname="com.objectmentor.library.web.servlet.ControllerServletTest" time="0.01"/>
+<testcase name="testDoPost" classname="com.objectmentor.library.web.servlet.ControllerServletTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.004">
+<testcase name="testCanReturnOnTimeBookThatWasBorrowed" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.0"/>
+<testcase name="testShouldSetStatusToUnknownBookOnAttemptToReturnUnknownBook" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.0"/>
+<testcase name="testShouldSetStatusToUnBorrowedBookOnAttemptToReturnUnBorrowedBook" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.001"/>
+<testcase name="testShouldHaveFineAndBeLateIfOneDayLate" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.001"/>
+<testcase name="testShouldHaveFineAndBeLateIfTwoDaysLate" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.001"/>
+<testcase name="testChargeIfDamaged" classname="com.objectmentor.library.libraryRules.LibraryReturnCopyTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.ControllerTest" time="0.001">
+<testcase name="testHandlePost" classname="com.objectmentor.library.web.controller.ControllerTest" time="0.0"/>
+<testcase name="testHandleGet" classname="com.objectmentor.library.web.controller.ControllerTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.PatronsController_NewPatronTest" time="0.0">
+<testcase name="testNewPatronSucceedsWithAllNameFields" classname="com.objectmentor.library.web.controller.PatronsController_NewPatronTest" time="0.0"/>
+<testcase name="testNewPatronSucceedsWithFirstAndLastNameFields" classname="com.objectmentor.library.web.controller.PatronsController_NewPatronTest" time="0.0"/>
+<testcase name="testNewPatronFailsWithNoFirstNameField" classname="com.objectmentor.library.web.controller.PatronsController_NewPatronTest" time="0.0"/>
+<testcase name="testNewPatronFailsWithNoLastNameField" classname="com.objectmentor.library.web.controller.PatronsController_NewPatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.PrinterUsageTest" time="0.053">
+<testcase name="testNothingProcessed" classname="com.objectmentor.library.libraryRules.PrinterUsageTest" time="0.05"/>
+<testcase name="testOneRecordProcessed" classname="com.objectmentor.library.libraryRules.PrinterUsageTest" time="0.002"/>
+<testcase name="testAcoupleRecordsProcessed" classname="com.objectmentor.library.libraryRules.PrinterUsageTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryBorrowComputerTest" time="0.002">
+<testcase name="testCanBorrowKnownComputer" classname="com.objectmentor.library.libraryRules.LibraryBorrowComputerTest" time="0.001"/>
+<testcase name="testCannotBorrowUnknownComputer" classname="com.objectmentor.library.libraryRules.LibraryBorrowComputerTest" time="0.0"/>
+<testcase name="testBorrowerMustBeKnownToLibrary" classname="com.objectmentor.library.libraryRules.LibraryBorrowComputerTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.models.PatronTest" time="0.001">
+<testcase name="testCreate" classname="com.objectmentor.library.models.PatronTest" time="0.001"/>
+<testcase name="testGetFullName" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.tags.ActionPathTagTest" time="0.013">
+<testcase name="testShouldPrependLibraryAndAppendDotDo" classname="com.objectmentor.library.web.tags.ActionPathTagTest" time="0.013"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.CardPrinterTest" time="0.0">
+<testcase name="testPrinting" classname="com.objectmentor.library.libraryRules.CardPrinterTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.mocks.MockMediaGatewayTest" time="0.004">
+<testcase name="testAddCopyCreateUniqueId" classname="com.objectmentor.library.mocks.MockMediaGatewayTest" time="0.003"/>
+<testcase name="testAddCopiesCreatesUniqueIds" classname="com.objectmentor.library.mocks.MockMediaGatewayTest" time="0.0"/>
+<testcase name="testGetAllISBNs" classname="com.objectmentor.library.mocks.MockMediaGatewayTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.MoneyTest" time="0.001">
+<testcase name="testEqualityShouldPassWithEqualValues" classname="com.objectmentor.library.libraryRules.MoneyTest" time="0.0"/>
+<testcase name="testEqualityShouldFailWithUnequalValues" classname="com.objectmentor.library.libraryRules.MoneyTest" time="0.0"/>
+<testcase name="testEqualityShouldFailOnNull" classname="com.objectmentor.library.libraryRules.MoneyTest" time="0.001"/>
+<testcase name="testEqualityShouldFailOnWrongType" classname="com.objectmentor.library.libraryRules.MoneyTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.services.WorldCatIsbnServiceTest" time="0.0">
+<testcase name="testLookupTheAlchemist" classname="com.objectmentor.library.services.WorldCatIsbnServiceTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.ControllerFinderTest" time="0.0">
+<testcase name="testShouldHandleNameInSubDirectory" classname="com.objectmentor.library.web.controller.ControllerFinderTest" time="0.0"/>
+<testcase name="testShouldHandleNameIn2ndSubDirectory" classname="com.objectmentor.library.web.controller.ControllerFinderTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.models.CompactDiscTest" time="0.001">
+<testcase name="testCDShouldHaveIdAndTitle" classname="com.objectmentor.library.models.CompactDiscTest" time="0.001"/>
+<testcase name="testCDShouldComplainIfYouAskItForAuthor" classname="com.objectmentor.library.models.CompactDiscTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryRegisterPatronTest" time="0.0">
+<testcase name="testShouldAddToPatronGateway" classname="com.objectmentor.library.libraryRules.LibraryRegisterPatronTest" time="0.0"/>
+<testcase name="testShouldPrintCard" classname="com.objectmentor.library.libraryRules.LibraryRegisterPatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.WelcomeControllerTest" time="0.001">
+<testcase name="testIndexShouldRenderWelcomeJSP" classname="com.objectmentor.library.web.controller.WelcomeControllerTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.001">
+<testcase name="testFindCopyShouldReturnNullForUnaddedBooks" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindCopyShouldReturnCopyForCorrectId" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testContainsShouldReturnTrueForCorrectId" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testContainsShouldReturnFalseForIncorrectISBN" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsNullWhenCopyIsBorrowed" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsCopyWhenCopyIsNotBorrowed" classname="com.objectmentor.library.libraryRules.MediaCatalogWithOneCopyTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryAcceptComputerTest" time="0.001">
+<testcase name="testShouldAddIfFoundOnNetwork" classname="com.objectmentor.library.libraryRules.LibraryAcceptComputerTest" time="0.001"/>
+<testcase name="testShouldInformIfNotFoundOnNetwork" classname="com.objectmentor.library.libraryRules.LibraryAcceptComputerTest" time="0.0"/>
+<testcase name="testShouldComplainIfIfNotFoundOnNetwork" classname="com.objectmentor.library.libraryRules.LibraryAcceptComputerTest" time="0.0"/>
+<testcase name="testShouldStoreInComputerGatewayOnAdd" classname="com.objectmentor.library.libraryRules.LibraryAcceptComputerTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.ActionResultTest" time="0.001">
+<testcase name="test3ArgHandlerResultConstructorSetsAllMessages" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="test2ArgHandlerResultConstructorSetsInfoAndWarningMessages" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="test1ArgHandlerResultConstructorSetsInfoMessageOnly" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testDefaultHandlerResultConstructorSetsNoMessages" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.001"/>
+<testcase name="testAppendToInfoMessage" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testAppendToWarningMessage" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testAppendToErrorMessage" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testEmpty" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testMakeErrorHandlerResult" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testMakeWarningHandlerResult" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+<testcase name="testMakeInfoHandlerResult" classname="com.objectmentor.library.web.controller.ActionResultTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.BooksController_ManageTest" time="0.002">
+<testcase name="testAcceptValidIsbn" classname="com.objectmentor.library.web.controller.BooksController_ManageTest" time="0.001"/>
+<testcase name="testMissingIsbn" classname="com.objectmentor.library.web.controller.BooksController_ManageTest" time="0.001"/>
+<testcase name="testEmptyIsbn" classname="com.objectmentor.library.web.controller.BooksController_ManageTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.MediaCatalogWhenEmptyTest" time="0.0">
+<testcase name="testShouldBeEmpty" classname="com.objectmentor.library.libraryRules.MediaCatalogWhenEmptyTest" time="0.0"/>
+<testcase name="testContainsShouldReturnFalse" classname="com.objectmentor.library.libraryRules.MediaCatalogWhenEmptyTest" time="0.0"/>
+<testcase name="testFindAvailableCopyShouldReturnNull" classname="com.objectmentor.library.libraryRules.MediaCatalogWhenEmptyTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.001">
+<testcase name="testAddBookShouldLookUpISBN" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+<testcase name="testAddBookShouldAddBookReturnedByIsbnService" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+<testcase name="testShouldReturnCorrectBookAmongMany" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+<testcase name="testUnfoundISBN" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+<testcase name="testCanFindMoreThanOneBook" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+<testcase name="testFindAvailableCopyReturnsCopyWhenOneCopyOfManyIsBorrowed" classname="com.objectmentor.library.libraryRules.MediaCatalogTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.models.BookTest" time="0.0">
+<testcase name="testBookShouldHaveTitleAndIdAndAuthor" classname="com.objectmentor.library.models.BookTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.PatronsController_ModifyPatronTest" time="0.001">
+<testcase name="testModifyPatronSucceedsWithValidData" classname="com.objectmentor.library.web.controller.PatronsController_ModifyPatronTest" time="0.001"/>
+<testcase name="testModifyPatronDoesNothingWithIdenticalData" classname="com.objectmentor.library.web.controller.PatronsController_ModifyPatronTest" time="0.0"/>
+<testcase name="testModifyPatronFailsWithMissingFirstName" classname="com.objectmentor.library.web.controller.PatronsController_ModifyPatronTest" time="0.0"/>
+<testcase name="testModifyPatronFailsWithMissingLastName" classname="com.objectmentor.library.web.controller.PatronsController_ModifyPatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.002">
+<testcase name="testCheckOutExistingBook" classname="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.002"/>
+<testcase name="testCheckOutFailsIfBookAlreadyBorrowed" classname="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.0"/>
+<testcase name="testCheckOutFailsIfBookDoesNotExist" classname="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.0"/>
+<testcase name="testCheckOutFailsIfNoSuchPatron" classname="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.0"/>
+<testcase name="testCheckOutFailsIfBookCannotBeBorrowed" classname="com.objectmentor.library.web.controller.patrons.BooksController_CheckoutTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.001">
+<testcase name="testStrippedDownURIReturnsSlashOnlyForContextPathOnly" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.001"/>
+<testcase name="testStrippedDownURIReturnsSlashOnlyForContextPathPlusSlashOnly" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+<testcase name="testStrippedDownURIReturnsSlashPlusRootForJSP" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+<testcase name="testStrippedDownURIReturnsSlashPlus2DirRootForJSP" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+<testcase name="testStrippedDownURIRemovesArguments" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+<testcase name="testLoadAndCallClass" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+<testcase name="testArrayToString" classname="com.objectmentor.library.web.servlet.ServletHelperTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.009">
+<testcase name="testCanBorrowBookThatLibraryHas" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.001"/>
+<testcase name="testCanNotLoanToNullPatron" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testShouldSetCopyToBorrowed" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanNotBorrowBookLibraryDoesNotHave" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.001"/>
+<testcase name="testCantBorrowIfAlreadyBorrowed" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanBorrowTwoIfTwoInCatalog" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.002"/>
+<testcase name="testSetReturnDateTwoWeeksFromToday" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.003"/>
+<testcase name="testReceiptRemembersBorrowingPatron" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testReceiptRemembersBorrowedCopy" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.001"/>
+<testcase name="testNotOldEnough" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.001"/>
+<testcase name="testOldEnough" classname="com.objectmentor.library.libraryRules.LibraryBorrowingTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.utils.DateUtilTest" time="0.002">
+<testcase name="testDateFromString" classname="com.objectmentor.library.utils.DateUtilTest" time="0.001"/>
+<testcase name="testDaysLateWithNoTimes" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+<testcase name="testDaysLateWhenTwoHoursLateCrossingMidnight" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+<testcase name="testDaysLateWhenOneSecondFromTwoDaysLate" classname="com.objectmentor.library.utils.DateUtilTest" time="0.001"/>
+<testcase name="testDaysLateWhenEarly" classname="com.objectmentor.library.utils.DateUtilTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.web.controller.ApplicationTest" time="0.001">
+<testcase name="testGetLibraryNeverReturnsNull" classname="com.objectmentor.library.web.controller.ApplicationTest" time="0.001"/>
+<testcase name="testGetMediaGatewayWithEmptyConstructor" classname="com.objectmentor.library.web.controller.ApplicationTest" time="0.0"/>
+<testcase name="testAcceptBookThrowsIsbnDoesNotExistExceptionIfIsbnIsNull" classname="com.objectmentor.library.web.controller.ApplicationTest" time="0.0"/>
+<testcase name="testAcceptBookThrowsIsbnDoesNotExistExceptionIfIsbnIsEmpty" classname="com.objectmentor.library.web.controller.ApplicationTest" time="0.0"/>
+<testcase name="testAcceptBookWithValidIsbn" classname="com.objectmentor.library.web.controller.ApplicationTest" time="0.0"/>
+</testsuite>
+</testrun>

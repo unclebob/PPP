@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appdeployment:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:appdeployment="http://www.ibm.com/websphere/appserver/schemas/5.0/appdeployment.xmi" xmi:id="Deployment_1172512654343">
+  <deployedObject xmi:type="appdeployment:ApplicationDeployment" xmi:id="ApplicationDeployment_1172512654343" startingWeight="10">
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512654343" startingWeight="10000" uri="Exercise3-DIP.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512654344" startingWeight="10000" uri="Library.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512654345" startingWeight="10000" uri="Exercise4-OCP.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512671187" startingWeight="10000" uri="Exercise5-LSP.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512812062" startingWeight="10000" uri="Exercise6-ISP.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512909796" startingWeight="10000" uri="Exercise7-LOD.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512947343" startingWeight="10000" uri="Exercise8-Packaging.war"/>
+    <modules xmi:type="appdeployment:WebModuleDeployment" xmi:id="WebModuleDeployment_1172512963125" startingWeight="10000" uri="Exercise9-PackageDecoupling.war"/>
+    <classloader xmi:id="Classloader_1172512654343" mode="PARENT_FIRST"/>
+  </deployedObject>
+</appdeployment:Deployment>

@@ -1,0 +1,17 @@
+* Note the switches on media type in Library and DamagedCondition.
+  (This code is similar to, but not identical to the corresponding 
+  code in the DIP exercise. These 	two exercises used to come in 
+  the opposite order, and the DIP's code handled media types 
+  "better". This code was "defactored" when the exercise order was
+	reversed.)
+
+* Emphasize refactoring first (README says so, but not everybody reads).
+
+* Expected outcome:
+  - Separate classes for Media types: Media (abstract), Book, CD, 
+    Periodical (extra credit)
+  - should include getCharge, calculateFine, dueDate
+	- they should have resolved switch in DamagedCondition. They likely did so
+		by adding getDamageCharge() to media. Hint at the LSP violation (without
+		mentioning LSP).
+

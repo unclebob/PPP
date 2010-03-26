@@ -1,0 +1,74 @@
+package com.objectmentor.library.libraryRules;
+
+import com.objectmentor.library.gateways.IsbnDoesNotExistException;
+import com.objectmentor.library.mocks.*;
+import com.objectmentor.library.models.*;
+import com.objectmentor.library.utils.DateUtil;
+import junit.framework.TestCase;
+
+import java.util.List;
+
+public class MediaCatalogTest extends TestCase {
+
+  private MockIsbnService isbnService;
+  private MockMediaGateway mockBookGateway;
+  private MediaCatalog catalog;
+
+  protected void setUp() throws Exception {
+    isbnService = new MockIsbnService();
+    mockBookGateway = new MockMediaGateway();
+    catalog = new MediaCatalog(isbnService, null, mockBookGateway);
+  }
+
+  public void testAddBookShouldLookUpISBN() {
+    addCopy("ISBN");
+    assertEquals("ISBN", isbnService.isbnLastPassedToFind);
+  }
+
+  public void testAddBookShouldAddBookReturnedByIsbnService() {
+    MediaCopy mediaCopy = addCopy("ISBN");
+    assertEquals(mockBookGateway.addedMediaCopy.getMedia(), mediaCopy
+      .getMedia());
+  }
+
+  public void testShouldReturnCorrectBookAmongMany() {
+    MediaCopy copy1 = addCopy("ISBN 1");
+    MediaCopy copy2 = addCopy("ISBN 2");
+    assertSame(copy1, catalog.findCopy("ISBN 1"));
+    assertSame(copy2, catalog.findCopy("ISBN 2"));
+  }
+
+  public void testUnfoundISBN() {
+    try {
+      catalog.addBookCopy("NON-EXISTENT ISBN");
+      fail();
+    }
+    catch (IsbnDoesNotExistException e) {
+    }
+  }
+
+  public void testCanFindMoreThanOneBook() throws Exception {
+    MediaCopy copy1 = addCopy("ISBN");
+    MediaCopy copy2 = addCopy("ISBN");
+    List copies = catalog.findAllCopies("ISBN");
+    assertEquals(2, copies.size());
+    assertTrue(copies.contains(copy1));
+    assertTrue(copies.contains(copy2));
+  }
+
+  public void testFindAvailableCopyReturnsCopyWhenOneCopyOfManyIsBorrowed()
+    throws Exception {
+    addCopy("ISBN");
+    addCopy("ISBN");
+    List copies = catalog.findAllCopies("ISBN");
+    MediaCopy copy = (MediaCopy) copies.get(0);
+    copy.setLoaned(new LoanReceipt(new Patron(DateUtil.dateFromString("1/1/2000"))));
+    assertNotNull(catalog.findAvailableCopy("ISBN"));
+  }
+
+  private MediaCopy addCopy(String isbn) {
+    isbnService.setBookToReturn(new Media(isbn, "War and Peace", "Tolstoy"));
+    return catalog.addBookCopy(isbn);
+  }
+
+}

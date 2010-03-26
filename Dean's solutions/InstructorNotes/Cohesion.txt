@@ -1,0 +1,18 @@
+Help the students recognize the emergence of a web framework and that the framework
+should be a separate component (or series of components) from the application (domain
+logic).
+
+The following should all be separate:
+Model
+Controllers
+Services
+Gateway
+Utilities
+Framework
+
+NOTE - The Coupling build.xml file could serve as a guide for YOU (teacher).
+
+NOTE - If useful, have the students view the "jdepend_report.png" file to see the 
+current package dependencies. However, this is really intended for exercise 9,
+on coupling.
+

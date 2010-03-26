@@ -1,0 +1,132 @@
+<project name="Library" default="compile" basedir=".">
+
+	<property file="build.properties" />
+	<property file="${user.home}/build.properties" />
+	<property environment="env" />
+	<property name="app.name" value="Exercise9-PackageDecoupling" />
+	<property name="app.path" value="/${app.name}" />
+	<property name="app.version" value="0.1-dev" />
+	<property name="build.home" value="${basedir}/build" />
+	<property name="build.war.home" value="${build.home}/war" />
+	<property name="build.classes.home" value="${build.home}/classes" />
+	<property name="build.jar.home" value="${build.home}/jars" />
+	<property name="catalina.home" value="${env.CATALINA_HOME}" />
+	<property name="dist.home" value="${basedir}/dist" />
+	<property name="web.home" value="${basedir}/web" />
+	<property name="docs.home" value="${basedir}/docs" />
+	<property name="manager.url" value="http://localhost:8080/manager" />
+	<property name="src.home" value="${basedir}/src" />
+	<property name="src.pkg" value="${src.home}/com/objectmentor/library" />
+	<property name="web.home" value="${basedir}/web" />
+
+	<taskdef name="install" classname="org.apache.catalina.ant.InstallTask" />
+	<taskdef name="list" classname="org.apache.catalina.ant.ListTask" />
+	<taskdef name="reload" classname="org.apache.catalina.ant.ReloadTask" />
+	<taskdef name="remove" classname="org.apache.catalina.ant.RemoveTask" />
+
+	<property name="compile.debug" value="true" />
+	<property name="compile.deprecation" value="false" />
+	<property name="compile.optimize" value="true" />
+	<path id="compile.classpath">
+		<fileset dir="lib">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement location="${catalina.home}/common/classes" />
+		<fileset dir="${catalina.home}/common/endorsed">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${catalina.home}/common/lib">
+			<include name="*.jar" />
+		</fileset>
+		<pathelement location="${catalina.home}/shared/classes" />
+		<fileset dir="${catalina.home}/shared/lib">
+			<include name="*.jar" />
+		</fileset>
+
+	</path>
+
+	<target name="all" depends="clean,compile,dist,remove,install" description="Clean build and dist directories, then compile" />
+	<target name="clean" description="Delete old build and dist directories">
+		<delete dir="${build.home}" />
+		<delete dir="${dist.home}" />
+	</target>
+
+	<target name="compile" description="Compile Java sources">
+		<mkdir dir="${build.classes.home}" />
+		<javac srcdir="${src.home}" destdir="${build.classes.home}" 
+			debug="${compile.debug}" deprecation="${compile.deprecation}" optimize="${compile.optimize}"
+			excludes="**/*Test.java"
+		>
+			<classpath refid="compile.classpath" />
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile" description="build jar files">
+		
+		<mkdir dir="${build.jar.home}" />
+		<jar jarfile="${build.jar.home}/library-application.jar" basedir="${build.classes.home}"
+			includes="**/application/**/*.class,**/libraryRules/**/*.class,**/models/**/*.class,**/gateways/**/*.class,**/services/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-controllers.jar" basedir="${build.classes.home}"
+			includes="**/web/controller/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-framework.jar" basedir="${build.classes.home}"
+			includes="**/web/framework/**/*.class,**/web/tags/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-services-online.jar" basedir="${build.classes.home}"
+			includes="**/online/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-services-offline.jar" basedir="${build.classes.home}"
+			includes="**/offline/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-utils.jar" basedir="${build.classes.home}"
+			includes="**/library/utils/**/*.class"
+		/>
+		<jar jarfile="${build.jar.home}/library-mocks.jar" basedir="${build.classes.home}"
+			includes="**/library/mocks/**/*.class"
+		/>
+		
+	</target>
+
+	<target name="dist" depends="jar" description="Create binary distribution">
+		<!-- start with everything from the web directory -->
+		<copy todir="${build.war.home}">
+			<fileset dir="${web.home}" />
+		</copy>
+
+		<!-- copy generated jars from /WEB-INF/lib -->
+		<copy todir="${build.war.home}/WEB-INF/lib">
+			<fileset dir="${build.jar.home}" includes="*.jar"/>
+		</copy>
+
+		<mkdir dir="${dist.home}" />
+		<jar jarfile="${dist.home}/${app.name}.war" basedir="${build.war.home}" />
+
+	</target>
+
+	<target name="install" depends="compile" description="Install application to servlet container">
+		<install url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}" war="file://${build.war.home}" />
+	</target>
+
+	<target name="docs" depends="javadoc" />
+	<target name="javadocs" depends="javadoc" />
+
+	<target name="javadoc" depends="compile" description="Create Javadoc API documentation">
+		<mkdir dir="${docs.home}/api" />
+		<javadoc sourcepath="${src.home}" destdir="${docs.home}/api" packagenames="*">
+			<classpath refid="compile.classpath" />
+		</javadoc>
+	</target>
+
+	<target name="list" description="List installed applications on servlet container">
+		<list url="${manager.url}" username="${manager.username}" password="${manager.password}" />
+	</target>
+
+	<target name="reload" depends="compile" description="Reload application on servlet container">
+		<reload url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}" />
+	</target>
+	<target name="remove" description="Remove application on servlet container">
+		<remove url="${manager.url}" username="${manager.username}" password="${manager.password}" path="${app.path}" />
+	</target>
+
+</project>

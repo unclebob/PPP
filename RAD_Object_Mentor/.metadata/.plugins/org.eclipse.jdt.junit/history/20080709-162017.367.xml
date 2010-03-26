@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="Exercise1-NamingAndLongMethods" project="Exercise1-NamingAndLongMethods" tests="13" started="13" failures="0" errors="0" ignored="0">
+<testsuite name="com.objectmentor.library.mocks.MockDataServicesBookAccessTest" time="0.001">
+<testcase name="testAddCopyCreateUniqueId" classname="com.objectmentor.library.mocks.MockDataServicesBookAccessTest" time="0.001"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.models.PatronTest" time="0.0">
+<testcase name="testCreate" classname="com.objectmentor.library.models.PatronTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.CatalogTest" time="0.0">
+<testcase name="testCatalog" classname="com.objectmentor.library.CatalogTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0">
+<testcase name="testCreate" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+<testcase name="testAddOne" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+<testcase name="testAddAFew" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+<testcase name="testRetrieveNonexistant" classname="com.objectmentor.library.mocks.MockDataServicesPatronAccessTest" time="0.0"/>
+</testsuite>
+<testsuite name="com.objectmentor.library.LibraryBorrowingTest" time="0.0">
+<testcase name="testCanBorrowBookThatLibraryHas" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanNotBorrowBookLibraryDoesNotHave" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testCanBorrowTwoIfTwoInCatalog" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testSetReturnDateTwoWeeksFromToday" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testReceiptRemembersBorrowingPatron" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+<testcase name="testReceiptRemembersBorrowedCopy" classname="com.objectmentor.library.LibraryBorrowingTest" time="0.0"/>
+</testsuite>
+</testrun>

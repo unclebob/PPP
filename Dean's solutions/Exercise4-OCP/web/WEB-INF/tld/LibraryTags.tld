@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN" 
+"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd"> 
+
+<taglib> 
+	<tlibversion>1.0</tlibversion> 
+	<jspversion>1.1</jspversion>
+	<shortname>LibraryTags</shortname>
+	<uri>http://www.objectmentor.com</uri>
+	<info>Library Tags Library</info>
+
+	<tag> 
+		<name>actionPath</name> 
+		<tagclass>com.objectmentor.library.web.tags.ActionPathTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<info>Generates paths</info> 
+
+		<attribute>
+			<name>actionName</name>
+			<required>true</required>
+		</attribute>
+	</tag> 
+</taglib>

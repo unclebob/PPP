@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageinfo>
+    
+
+
+
+
+
+
+
+
+
+
+<project name="Exercise1-NamingAndLongMethods"/>
+<project name="Exercise2-SRP"/>
+<project name="Exercise3-DIP"/>
+<project name="Exercise4-OCP"/>
+<project name="Exercise5-LSP"/>
+<project name="Exercise6-ISP"/>
+<project name="Exercise7-LOD"/>
+<project name="Library"/>
+<project name="Library_Test"/>
+<project name="Exercise8-Packaging"/>
+<project name="Exercise9-PackageDecoupling"/>
+</pageinfo>

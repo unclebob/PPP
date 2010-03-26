@@ -1,0 +1,22 @@
+#Wed Jul 09 16:15:25 CDT 2008
+org.eclipse.jdt.core.compiler.compliance=1.5
+org.eclipse.jdt.core.classpathVariable.SERVERJDK_PLUGINDIR=c\:/program files/Rational Software/RAD6.0/runtimes/base_v5/java
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.WAS_50_PLUGINDIR=c\:/program files/Rational Software/RAD6.0/runtimes/base_v5
+org.eclipse.jdt.core.classpathVariable.SERVERJDK_SRCROOT=src
+org.eclipse.jdt.core.classpathVariable.WEBTOOLS_PLUGINDIR=/c\:/program files/Rational Software/RAD6.0/rwd/eclipse/plugins/com.ibm.etools.webtools_6.0.0.1/
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+org.eclipse.jdt.core.classpathVariable.WAS_V6_IMPL_FACTORY_PROP=c\:/program files/Rational Software/RAD6.0/rwd/eclipse/plugins/com.ibm.websphere.v6_6.0.0.1/implfactory.jar
+org.eclipse.jdt.core.classpathVariable.SERVERJDK_50_PLUGINDIR=c\:/program files/Rational Software/RAD6.0/runtimes/base_v5/java
+org.eclipse.jdt.core.timeoutForParameterNameFromAttachedJavadoc=50
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Home/src.jar
+org.eclipse.jdt.core.classpathVariable.XERCES_API_JAR=c\:/program files/Rational Software/RAD6.0/runtimes/base_v5/lib/xerces.jar
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=/System/Library/Frameworks/JavaVM.framework/Versions/1.5.0/Classes/classes.jar
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=src
+org.eclipse.jdt.core.classpathVariable.WAS_PLUGINDIR=c\:/program files/Rational Software/RAD6.0/runtimes/base_v5
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5
+org.eclipse.jdt.core.compiler.source=1.5
