@@ -17,7 +17,7 @@ We also want to add a new type of media: Movie/DVD.
 The OCP suggests that we should be able to simply
 add a new class and NOT modify any existing code.
 Can we?
-
+//pnoangninfgophnoipfnhidofhniohfdhfdiohdfniif[hniofnoifasdofhiopfho-afdhio- fhio- f
 Exercise:
 
 1. Refactor the code so that we can then make the above changes as efficiently as possible. Do not allow your build and tests to break.
